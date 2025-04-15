@@ -1,26 +1,55 @@
-@import "tailwindcss";
+@import 'tailwindcss';
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+@layer base {
+  @theme {
+    --color-bgr: #020618;
+    --color-txt: #f8fafc;
+    --color-pri: #fc2569;
+    --color-sec: #2548f6;
+  }
+  html {
+    color: var(--color-txt);
+    font-family: var(--font-par);
+    background-color: var(--color-bgr);
+  }
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: var(--font-heading);
+  }
+  ::selection {
+    background-color: rgba(252, 37, 105, 0.6);
   }
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+@layer components {
+  .flex-center {
+    @apply flex justify-center items-center;
+  }
+
+  .text-heading {
+    font-family: var(--font-heading);
+  }
+
+  .tshadow-text {
+    text-shadow: 0px 0px 7px rgba(255, 255, 255, 0.5);
+  }
+  .tshadow-primary {
+    text-shadow: 0px 0px 10px rgba(252, 37, 105, 0.8);
+  }
+
+  .grad-fadeinout {
+    @apply bg-gradient-to-r from-transparent via-[var(--color-pri)] to-transparent;
+  }
+
+  .grad-primary {
+    background-image: linear-gradient(
+      to right,
+      transparent,
+      rgba(252, 37, 105, 0.5)
+    );
+  }
 }
