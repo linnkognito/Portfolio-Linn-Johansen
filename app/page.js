@@ -5,7 +5,7 @@ export default function Home() {
     <section aria-labelledby='index-heading'>
       <article>
         <h1 id='index-heading' className='w-fit text-orbitron'>
-          <span>Frontend Developer</span>
+          <span className='text-heading'>Frontend Developer</span>
           <span>Linn Johansen</span>
         </h1>
         <h2>

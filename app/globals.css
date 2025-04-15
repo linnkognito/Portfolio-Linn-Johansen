@@ -4,7 +4,8 @@
   @theme {
     --color-bgr: #020618;
     --color-txt: #f8fafc;
-    --color-pri: #fc2569;
+    /* --color-pri: #fc2569; */
+    --color-pri: #a5b4fc;
     --color-sec: #2548f6;
   }
   html {
@@ -34,18 +35,25 @@
     font-family: var(--font-heading);
   }
 
-  .tshadow-text {
+  .shadow-around-glow {
+    box-shadow: 0 0 10px rgba(255, 255, 255, 1);
+  }
+
+  .tshadow-txt {
     text-shadow: 0px 0px 7px rgba(255, 255, 255, 0.5);
   }
-  .tshadow-primary {
+  .tshadow-pri {
     text-shadow: 0px 0px 10px rgba(252, 37, 105, 0.8);
   }
 
-  .grad-fadeinout {
-    @apply bg-gradient-to-r from-transparent via-[var(--color-pri)] to-transparent;
+  .anim-border-col {
+    @apply duration-250 ease-in-out will-change-[border-color];
+  }
+  .anim-tran {
+    @apply duration-500 ease-in-out will-change-transform;
   }
 
-  .grad-primary {
+  .grad-pri {
     background-image: linear-gradient(
       to right,
       transparent,

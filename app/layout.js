@@ -36,9 +36,9 @@ function RootLayout({ children }) {
       className={`${jura.variable} ${orbitron.variable}`}
     >
       <body className='relative aspect-auto h-screen w-screen max-w-screen'>
-        <div className='absolute inset-0 flex-center z-[-1]'>
+        <div className='absolute inset-10 flex-center z-[-1]'>
           <Image
-            src='/hero.png'
+            src='/spike.png'
             alt='Home page background image'
             fill
             className='object-contain'
