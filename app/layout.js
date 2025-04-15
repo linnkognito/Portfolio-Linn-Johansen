@@ -35,21 +35,34 @@ function RootLayout({ children }) {
       dir='ltr'
       className={`${jura.variable} ${orbitron.variable}`}
     >
-      <body className='relative aspect-auto h-screen w-screen max-w-screen'>
-        <div className='absolute inset-10 flex-center z-[-1]'>
+      <body className='relative aspect-auto h-screen w-screen max-w-screen px-4 pb-4'>
+        <div
+          role='img'
+          className='absolute inset-10 flex items-center justify-end z-[-1]'
+        >
           <Image
             src='/spike.png'
             alt='Home page background image'
             fill
-            className='object-contain'
+            className='object-contain object-right pr-10'
           />
         </div>
 
-        <Header />
+        <section
+          aria-labelledby='home-heading'
+          className='flex flex-col gap-4 w-full h-full'
+        >
+          <Header />
 
-        <main id='main-content'>{children}</main>
+          <main
+            id='main-content'
+            className='flex w-full max-w-site min-h-2/3 mx-auto px-10 py-6 border border-pri/50 rounded-xs'
+          >
+            {children}
+          </main>
+          <Footer />
+        </section>
       </body>
-      <Footer />
     </html>
   );
 }

@@ -4,9 +4,9 @@
   @theme {
     --color-bgr: #020618;
     --color-txt: #f8fafc;
-    /* --color-pri: #fc2569; */
     --color-pri: #a5b4fc;
     --color-sec: #2548f6;
+    --color-acc: #fc2569;
   }
   html {
     color: var(--color-txt);
@@ -14,7 +14,6 @@
     background-color: var(--color-bgr);
   }
   h1,
-  h2,
   h3,
   h4,
   h5,
@@ -31,18 +30,37 @@
     @apply flex justify-center items-center;
   }
 
+  .max-w-header {
+    @apply max-w-[1510px];
+  }
+  .max-w-site {
+    @apply max-w-[1500px];
+  }
+
   .text-heading {
     font-family: var(--font-heading);
   }
 
+  .shadow-around {
+    box-shadow: 0 0 3px rgba(255, 255, 255, 0.8);
+  }
   .shadow-around-glow {
     box-shadow: 0 0 10px rgba(255, 255, 255, 1);
   }
 
+  /* .tshadow-pri {
+    text-shadow: 0px 0px 7px rgba(255, 255, 255, 0.5);
+  } */
+  .tshadow-glow {
+    text-shadow: 0px 0px 20px #2548f6;
+  }
   .tshadow-txt {
     text-shadow: 0px 0px 7px rgba(255, 255, 255, 0.5);
   }
-  .tshadow-pri {
+  .tshadow-txt-md {
+    text-shadow: 0px 0px 10px rgba(255, 255, 255, 1);
+  }
+  .tshadow-acc {
     text-shadow: 0px 0px 10px rgba(252, 37, 105, 0.8);
   }
 

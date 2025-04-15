@@ -3,7 +3,7 @@ import Link from 'next/link';
 
 function HeroCard({ title, image, link }) {
   return (
-    <div className='backdrop-blur-sm bg-bgr/10 rounded-xl w-1/3'>
+    <div className='w-1/3 backdrop-blur-sm bg-bgr/10 rounded-xl'>
       <h4>{title}</h4>
       <Image
         src={image.src}
