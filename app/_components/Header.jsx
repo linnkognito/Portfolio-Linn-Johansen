@@ -1,5 +1,5 @@
 import Logo from './Logo';
-import Nav from './Nav';
+import NavWrapper from './NavWrapper';
 
 function Header({ ...props }) {
   return (
@@ -9,7 +9,7 @@ function Header({ ...props }) {
     >
       <Logo />
 
-      <Nav />
+      <NavWrapper />
     </header>
   );
 }

@@ -1,9 +1,9 @@
-import ButtonsCta from './_components/ButtonsCta';
-import HeroCards from './_hero/HeroCards';
+import HeroButtons from '@/app/_hero/HeroButtons';
+import HeroCards from '@/app/_hero/HeroCards';
 
 export default function Home() {
   return (
-    <section aria-labelledby='index-heading' className='relative'>
+    <section aria-labelledby='index-heading' className='relative p-section'>
       <article className='pl-10 pt-[15vh]'>
         <h1
           id='index-heading'
@@ -19,7 +19,7 @@ export default function Home() {
 
         {/* Bio */}
         <div className='w-full max-w-1/3 pl-4 pt-6 text-justify'>
-          <ButtonsCta />
+          <HeroButtons />
         </div>
 
         {/* <HeroCards /> */}

@@ -9,9 +9,7 @@ function Heading({
 }) {
   return (
     <Tag
-      className={`${className} ${color} ${margin} ${srOnly ? 'sr-only' : ''} ${
-        textShadow ? 'text-shadow' : ''
-      } text-5xl tracking-wide`}
+      className={`${className} ${color} ${srOnly ? 'sr-only' : ''}`}
       {...props}
     >
       {children}

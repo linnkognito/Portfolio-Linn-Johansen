@@ -56,7 +56,7 @@ function RootLayout({ children }) {
 
           <main
             id='main-content'
-            className='flex w-full max-w-site min-h-2/3 mx-auto px-10 py-6 border border-pri/50 rounded-xs'
+            className='flex w-full max-w-site min-h-2/3 mx-auto border border-pri/50 rounded-xs'
           >
             {children}
           </main>

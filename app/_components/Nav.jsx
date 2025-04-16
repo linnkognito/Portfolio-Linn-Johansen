@@ -1,23 +1,19 @@
 import NavLink from './NavLink';
 
-function Nav({ theme = 'site' }) {
-  const isMainNav = theme === 'site';
-  console.log(isMainNav);
-
+function Nav({ pathname = '/' }) {
   return (
     <nav aria-label='main-navigation'>
-      <ul
-        className={`flex uppercase tracking-wider ${
-          isMainNav ? 'gap-16' : 'gap-6'
-        }`}
-      >
-        <NavLink href='/' isMainNav={isMainNav}>
+      <ul className='flex gap-16 tracking-wider uppercase'>
+        <NavLink href='/' pathname={pathname}>
           Home
         </NavLink>
-        <NavLink href='/portfolio' isMainNav={isMainNav}>
+        <NavLink href='/portfolio' pathname={pathname}>
           Portfolio
         </NavLink>
-        <NavLink href='/connect' isMainNav={isMainNav}>
+        <NavLink href='/about' pathname={pathname}>
+          About
+        </NavLink>
+        <NavLink href='/connect' pathname={pathname}>
           Contact
         </NavLink>
       </ul>
