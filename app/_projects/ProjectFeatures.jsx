@@ -3,22 +3,19 @@ import ContainerPill from '../_components/ContainerPill';
 function ProjectFeatures({
   features = [],
   width = 'w-full max-w-4/5',
-  padding = 'pt-2 pl-4',
-  label = '',
-  value = '',
+  padding = 'pt-2',
 }) {
   if (!features.length) return null;
 
   return (
     <dl className={`flex flex-col gap-4 text-justify ${width} ${padding}`}>
       {features.map((feature) => (
-        <>
-          <dt className='w-full font-semibold text-lg text-pri tracking-[0.2em] uppercase'>
-            {feature.label}
+        <div key={feature.label} className='flex flex-col gap-2 px-4 pb-4'>
+          <dt className='font-semibold text-lg text-pri tracking-[0.2em] uppercase border-b border-pri/30'>
+            <p>{feature.label}</p>
           </dt>
-          <span className='grow mx-4 border-pri/30 border-b' />
-          <dd className='w-full min-w-1/3'>{feature.value}</dd>
-        </>
+          <dd className='pl-2'>{feature.value}</dd>
+        </div>
       ))}
     </dl>
   );

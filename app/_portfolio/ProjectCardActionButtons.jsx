@@ -3,7 +3,11 @@ import Link from 'next/link';
 import ButtonCTA from '../_components/ButtonCTA';
 import Separator from '../_components/Separator';
 
-function ProjectCardActionButtons({ className = '' }) {
+function ProjectCardActionButtons({
+  className = '',
+  buttonCTA = 'Details',
+  buttonIcon = 'GitHub',
+}) {
   return (
     <div
       className={`flex items-center justify-between gap-6 w-fit h-fit ${className}`}
@@ -12,7 +16,7 @@ function ProjectCardActionButtons({ className = '' }) {
     >
       <ButtonCTA ariaLabel='Learn more about this project'>
         <Link href='/projects' className='tshadow-txt'>
-          Details
+          {buttonCTA}
         </Link>
       </ButtonCTA>
 
@@ -27,7 +31,7 @@ function ProjectCardActionButtons({ className = '' }) {
           className='h-6 w-6 p-1 bg-pri/20 shadow-around rounded-full text-pri border border-indigo-300  group-hover:bg-sec/20 anim-prep transition-colors'
           aria-hidden='true'
         />
-        GitHub
+        {buttonIcon}
       </Link>
     </div>
   );

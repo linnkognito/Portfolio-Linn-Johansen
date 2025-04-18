@@ -1,9 +1,10 @@
 function ButtonCTA({
   children,
   type = 'left',
-  onClick,
-  ariaLabel,
+  ariaLabel = '',
   disabled = false,
+  className = '',
+  ...props
 }) {
   const styles = {
     left: 'rounded-bl-xl rounded-tr-xl',
@@ -13,7 +14,6 @@ function ButtonCTA({
 
   return (
     <button
-      onClick={onClick}
       disabled={disabled}
       aria-label={ariaLabel}
       className={`
@@ -37,7 +37,9 @@ function ButtonCTA({
         disabled:opacity-50 
         disabled:cursor-not-allowed
         ${styles[type]}
+        ${className}
       `}
+      {...props}
     >
       {children}
     </button>
