@@ -64,7 +64,10 @@
     box-shadow: 0 0 10px var(--color-txt);
   }
   .shadow-glow-acc {
-    box-shadow: 0 0 50px var(--color-acc);
+    box-shadow: 0 0 40px var(--color-acc);
+  }
+  .shadow-glow-sdw {
+    box-shadow: 0 0 40px var(--color-sdw);
   }
   .shadow-subtle {
     box-shadow: 0 0 10px var(--color-txt);

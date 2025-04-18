@@ -5,7 +5,7 @@ import TechIcon from '@_components/TechIcon';
 import TechIcons from '@_components/TechIcons';
 import ProjectCardDescription from '@_portfolio/project-card-1/ProjectCardDescription';
 import ModernPortfolioButton from '@_showcase-components/ModernPortfolioButton';
-import ProjectCardImage from '@_portfolio/project-card-1/ProjectCardImage';
+import ProjectCardImage from '@/_projects/ProjectCardImage';
 import ContainerPill from '@/_components/ContainerPill';
 
 function Page({ title = 'Example project' }) {
@@ -70,7 +70,7 @@ function Page({ title = 'Example project' }) {
 
         {/* UI Showcase */}
         <section className='flex gap-10 w-full px-10'>
-          <div className='flex flex-col gap-4 w-1/3 p-section bg-bgr/50 border border-pri/20 rounded-xs'>
+          <div className='flex flex-col gap-4 w-1/3 p-section bg-bgr/80 border border-pri/30 rounded-xs shadow-xl shadow-bgr'>
             <ModernPortfolioButton className='w-full text-xl'>
               Small
             </ModernPortfolioButton>
@@ -86,7 +86,7 @@ function Page({ title = 'Example project' }) {
             <div className='self-start flex gap-6 w-2/3'>
               <DividerHorizontal width='w-full' margin='mb-3' className='' />
               <h2
-                className='text-heading text-pri tshadow-txt text-lg font-semibold tracking-[0.75em] uppercase'
+                className='text-heading text-txt tshadow-txt text-lg font-semibold tracking-[0.75em] uppercase'
                 id='project-name'
               >
                 Ui/UX

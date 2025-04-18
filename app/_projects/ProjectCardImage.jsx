@@ -1,9 +1,9 @@
 import Image from 'next/image';
 
-function ProjectCardImage({ src, shadow = 'shadow-glow-acc', className = '' }) {
+function ProjectCardImage({ src, shadow = 'shadow-glow-sdw', className = '' }) {
   return (
     <figure
-      className={`relative aspect-square max-h-[450px] rounded-full  ${shadow}  ${className}`}
+      className={`relative aspect-square max-h-[450px] rounded-full  ${shadow} ${className}`}
     >
       <Image
         src={src}
