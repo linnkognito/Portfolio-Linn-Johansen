@@ -3,9 +3,11 @@
     "baseUrl": ".",
     "paths": {
       "@/*": ["./app/*"],
-      "@components/*": ["./app/_components/*"],
-      "@portfolio/*": ["./app/_portfolio/*"],
-      "@projects/*": ["./app/_projects/*"],
+      "@_components/*": ["./app/_components/*"],
+      "@_hero/*": ["./app/_hero/*"],
+      "@_portfolio/*": ["./app/_portfolio/*"],
+      "@_projects/*": ["./app/_projects/*"],
+      "@_showcase-components/*": ["./app/_showcase-components/*"],
       "@styles/*": ["./app/styles/*"]
     },
     "jsx": "preserve",

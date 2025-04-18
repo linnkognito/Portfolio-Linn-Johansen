@@ -1,7 +1,8 @@
 import Image from 'next/image';
-import DividerHorizontal from '../_components/DividerHorizontal';
-import ProjectCardDescription from '../_portfolio/project-card-1/ProjectCardDescription';
-import ProjectCardActionButtons from '../_portfolio/ProjectCardActionButtons';
+import DividerHorizontal from '@_components/DividerHorizontal';
+import ProjectCardDescription from '@_portfolio/project-card-1/ProjectCardDescription';
+import ProjectCardActionButtons from '@_portfolio/ProjectCardActionButtons';
+import ContainerPill from '@/_components/ContainerPill';
 
 function ProjectCard() {
   return (
@@ -32,7 +33,13 @@ function ProjectCard() {
         />
         <DividerHorizontal margin='my-1' />
 
-        <ProjectCardActionButtons className='pl-1' />
+        <ContainerPill
+          theme='dark'
+          width='w-full'
+          className='py-[1px] shadow-md shadow-bgr/50'
+        >
+          <ProjectCardActionButtons className='pl-1' />
+        </ContainerPill>
       </div>
     </div>
   );

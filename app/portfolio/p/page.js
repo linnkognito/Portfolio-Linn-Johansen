@@ -1,12 +1,12 @@
 import { Reactjs, Sanity, Tailwind } from '@react-symbols/icons';
 import Image from 'next/image';
-import DividerHorizontal from '@/app/_components/DividerHorizontal';
-import TechIcon from '@/app/_components/TechIcon';
-import TechIcons from '@/app/_components/TechIcons';
-import ProjectCardDescription from '@/app/_portfolio/project-card-1/ProjectCardDescription';
-import ModernPortfolioButton from '@/app/_showcase-components/ModernPortfolioButton';
-import DividerVertical from '@/app/_components/DividerVertical';
-import ProjectCardImage from '@/app/_portfolio/project-card-1/ProjectCardImage';
+import DividerHorizontal from '@_components/DividerHorizontal';
+import TechIcon from '@_components/TechIcon';
+import TechIcons from '@_components/TechIcons';
+import ProjectCardDescription from '@_portfolio/project-card-1/ProjectCardDescription';
+import ModernPortfolioButton from '@_showcase-components/ModernPortfolioButton';
+import ProjectCardImage from '@_portfolio/project-card-1/ProjectCardImage';
+import ContainerPill from '@/_components/ContainerPill';
 
 function Page({ title = 'Example project' }) {
   return (
@@ -23,13 +23,13 @@ function Page({ title = 'Example project' }) {
 
       <article className='flex flex-col gap-10 p-section'>
         <section className='flex gap-6 pl-8 pr-4'>
-          <div className='flex-center h-fit mt-10 rounded-full bg-pri/10 border border-pri/20'>
+          <ContainerPill className='mt-10'>
             <TechIcons direction='col'>
               <TechIcon title='Sanity' width='w-8' icon={<Sanity />} />
               <TechIcon title='React.js' width='w-8' icon={<Reactjs />} />
               <TechIcon title='Tailwind CSS' width='w-8' icon={<Tailwind />} />
             </TechIcons>
-          </div>
+          </ContainerPill>
 
           {/* <div className='relative w-full max-w-3/4 aspect-[16/9] border border-pri/50 rounded-xs shadow shadow-pri/50'> */}
           <div className='relative w-full max-w-3/4 aspect-[16/9] border border-bgr/10 rounded-xs shadow-xl shadow-bgr'>

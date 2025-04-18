@@ -1,7 +1,7 @@
 import { Github } from '@react-symbols/icons';
 import Link from 'next/link';
-import ButtonCTA from '@/app/_components/ButtonCTA';
-import Separator from '@/app/_components/Separator';
+import ButtonCTA from '@_components/ButtonCTA';
+import Separator from '@_components/Separator';
 
 function ProjectCardActionButtons({ className = '' }) {
   return (

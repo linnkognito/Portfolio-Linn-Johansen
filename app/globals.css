@@ -52,13 +52,15 @@
   .shadow-around {
     box-shadow: 0 0 3px rgba(255, 255, 255, 0.8);
   }
+  .shadow-around-bgr {
+    box-shadow: 0 0 15px var(--color-bgr);
+  }
   .shadow-around-glow {
     box-shadow: 0 0 10px rgba(255, 255, 255, 1);
   }
   .shadow-glow-acc {
     box-shadow: 0 0 50px rgba(252, 37, 105, 0.5);
   }
-
   .shadow-subtle {
     box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
   }

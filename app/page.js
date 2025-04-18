@@ -1,5 +1,5 @@
-import HeroButtons from '@/app/_hero/HeroButtons';
-import HeroCards from '@/app/_hero/HeroCards';
+import HeroButtons from '@_hero/HeroButtons';
+import HeroCards from '@_hero/HeroCards';
 
 export default function Home() {
   return (
