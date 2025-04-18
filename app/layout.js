@@ -44,7 +44,7 @@ function RootLayout({ children }) {
             src='/spike.png'
             alt='Home page background image'
             fill
-            className='object-contain object-right'
+            className='object-contain object-right translate-x-[-2rem]'
           />
         </div>
 
