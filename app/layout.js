@@ -35,7 +35,7 @@ function RootLayout({ children }) {
       dir='ltr'
       className={`${jura.variable} ${orbitron.variable}`}
     >
-      <body className='relative aspect-auto h-screen w-screen max-w-screen px-4 pb-4'>
+      <body className='relative aspect-auto h-screen w-full max-w-screen overflow-x-hidden px-6 pb-4'>
         <div
           role='img'
           className='fixed inset-0 flex items-center justify-end z-[-1]'
@@ -44,13 +44,13 @@ function RootLayout({ children }) {
             src='/spike.png'
             alt='Home page background image'
             fill
-            className='object-contain object-right pr-10'
+            className='object-contain object-right'
           />
         </div>
 
         <section
           aria-labelledby='home-heading'
-          className='flex flex-col gap-4 w-full h-full'
+          className='flex flex-col gap-4 h-full'
         >
           <Header />
 

@@ -35,8 +35,8 @@ function ProjectCard() {
 
         <ContainerPill
           theme='dark'
-          width='w-full'
-          className='py-[1px] shadow-md shadow-bgr/50'
+          width='w-fit'
+          className='shadow-md shadow-bgr/50'
         >
           <ProjectCardActionButtons className='pl-1' />
         </ContainerPill>
