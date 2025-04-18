@@ -38,7 +38,7 @@ function RootLayout({ children }) {
       <body className='relative aspect-auto h-screen w-screen max-w-screen px-4 pb-4'>
         <div
           role='img'
-          className='fixed inset-10 flex items-center justify-end z-[-1]'
+          className='fixed inset-0 flex items-center justify-end z-[-1]'
         >
           <Image
             src='/spike.png'
