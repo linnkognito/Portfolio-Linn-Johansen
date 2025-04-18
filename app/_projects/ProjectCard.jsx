@@ -6,7 +6,7 @@ import ContainerPill from '@/_components/ContainerPill';
 
 function ProjectCard() {
   return (
-    <div className='flex flex-col lg:flex-row gap-4 w-full h-auto px-4 py-4 bg-sec/10 border border-pri/50 rounded-xs backdrop-blur-md'>
+    <div className='flex flex-col lg:flex-row gap-4 w-full h-auto px-4 py-4 bg-bgr/40 border border-pri/50 rounded-xs backdrop-blur-lg shadow-md shadow-sdw/50'>
       {/* Preview Image */}
       <div className='relative w-full lg:max-w-1/2 aspect-[16/9] border border-pri/50 rounded-xs shadow shadow-pri/50'>
         <Image

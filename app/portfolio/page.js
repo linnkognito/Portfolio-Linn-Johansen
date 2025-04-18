@@ -5,7 +5,7 @@ import DividerHorizontal from '@_components/DividerHorizontal';
 function Page() {
   return (
     <section
-      className='min-h-fit p-section bg-pri/5 rounded-xs'
+      className='min-h-fit p-section bg-bgr/5 rounded-xs backdrop-blur-xs'
       aria-labelledby='portfolio-heading'
     >
       <h1

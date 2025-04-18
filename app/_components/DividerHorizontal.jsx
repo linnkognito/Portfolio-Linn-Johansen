@@ -9,7 +9,7 @@ function DividerHorizontal({
       role='separator'
       aria-orientation='horizontal'
       aria-label={ariaLabel}
-      className={`border-b border-pri/30 ${width} ${margin} ${className}`}
+      className={`border-b border-pri/40 ${width} ${margin} ${className}`}
     />
   );
 }
