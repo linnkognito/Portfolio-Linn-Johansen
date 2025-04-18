@@ -3,17 +3,35 @@ import Link from 'next/link';
 
 function HeroCard({ title, image, link }) {
   return (
-    <div className='w-1/3 backdrop-blur-sm bg-bgr/10 rounded-xl'>
-      <h4>{title}</h4>
-      <Image
-        src={image.src}
-        alt={image.alt}
-        width={300}
-        height={300}
-        className='rounded-full'
-      />
-      <Link href={link.href}>{link.label}</Link>
-    </div>
+    <article
+      className='w-1/3 backdrop-blur-sm bg-bgr/10 rounded-xl p-4'
+      aria-labelledby={`hero-card-title-${title
+        .toLowerCase()
+        .replace(/\s+/g, '-')}`}
+    >
+      <h4
+        id={`hero-card-title-${title.toLowerCase().replace(/\s+/g, '-')}`}
+        className='text-xl font-semibold mb-2'
+      >
+        {title}
+      </h4>
+      <figure className='mb-4'>
+        <Image
+          src={image.src}
+          alt={image.alt || `${title} image`}
+          width={300}
+          height={300}
+          className='rounded-full'
+        />
+      </figure>
+      <Link
+        href={link.href}
+        className='inline-block px-4 py-2 bg-pri/20 rounded-md hover:bg-pri/30 focus:outline-none focus:ring-2 focus:ring-pri focus:ring-offset-2 transition-colors'
+        aria-label={`${link.label} - ${title}`}
+      >
+        {link.label}
+      </Link>
+    </article>
   );
 }
 

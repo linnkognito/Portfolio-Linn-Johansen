@@ -1,5 +1,4 @@
 import Link from 'next/link';
-import Circle from './Circle';
 
 function Logo() {
   return (
@@ -7,8 +6,12 @@ function Logo() {
       <Link
         href='/'
         className='text-2xl font-semibold text-heading tracking-widest'
+        aria-label='LiJo - Home'
       >
-        <span className='text-slate-300 tracking-widest tshadow-txt uppercase'>
+        <span
+          className='text-slate-300 tracking-widest tshadow-txt uppercase'
+          aria-hidden='true'
+        >
           [ <span className='text-pri'>LiJo</span> ]
         </span>
       </Link>

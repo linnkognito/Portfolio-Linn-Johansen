@@ -1,9 +1,16 @@
-function DividerVertical({ height = 'h-6' }) {
+function DividerVertical({
+  height = 'h-full',
+  margin = 'mx-2',
+  className = '',
+  ariaLabel = 'Content divider',
+}) {
   return (
-    <span
-      aria-hidden='true'
-      className={`border-r border-indigo-300/30 ${height}`}
-    ></span>
+    <div
+      role='separator'
+      aria-orientation='vertical'
+      aria-label={ariaLabel}
+      className={`border-r border-pri/30 ${height} ${margin} ${className}`}
+    />
   );
 }
 

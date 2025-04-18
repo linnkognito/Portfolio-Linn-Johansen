@@ -2,8 +2,12 @@ import NavLink from './NavLink';
 
 function Nav({ pathname = '/' }) {
   return (
-    <nav aria-label='main-navigation'>
-      <ul className='flex gap-16 tracking-wider uppercase'>
+    <nav aria-label='Main navigation' role='navigation'>
+      <ul
+        className='flex gap-16 tracking-wider uppercase'
+        role='menubar'
+        aria-label='Main menu'
+      >
         <NavLink href='/' pathname={pathname}>
           Home
         </NavLink>

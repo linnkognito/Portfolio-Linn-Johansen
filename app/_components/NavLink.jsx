@@ -10,8 +10,16 @@ function NavLink({ children, href = '/', pathname = '/' }) {
           ? 'text-pri border-slate-300 hover:border-sec'
           : 'text-txt border-transparent hover:border-slate-500'
       }`}
+      role='none'
     >
-      <Link href={href}>{children}</Link>
+      <Link
+        href={href}
+        role='menuitem'
+        aria-current={isActive ? 'page' : undefined}
+        className='focus:outline-none focus:ring-2 focus:ring-pri focus:ring-offset-2'
+      >
+        {children}
+      </Link>
     </li>
   );
 }

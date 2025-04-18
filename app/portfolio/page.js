@@ -1,24 +1,30 @@
-import Heading from '@/app/_components/Heading';
-import PortfolioCard1 from '../_portfolio/PortfolioCard1';
+import ProjectCards from '../_portfolio/ProjectCards';
+import ProjectCard from '@/app/_projects/ProjectCard';
+import DividerHorizontal from '../_components/DividerHorizontal';
 
 function Page() {
   return (
     <section
-      aria-labelledby='heading-portfolio'
-      className='w-full h-full min-h-fit bg-pri/5 backdrop-blur-sm rounded-xs'
+      className='w-full min-h-fit p-section bg-pri/5 rounded-xs'
+      aria-labelledby='portfolio-heading'
     >
-      <div className='p-section'>
-        <h1
-          id='heading-portfolio'
-          className='w-full pb-2 pl-2 text-2xl text-pri font-medium tracking-[1em] tshadow-glow-sm border-b border-pri/30 uppercase'
-        >
-          Portfolio
-        </h1>
+      <h1
+        id='portfolio-heading'
+        className='max-w-full sm:max-w-4/5 pb-4 px-12 mx-4 sm:mx-auto text-2xl sm:text-3xl text-center text-heading text-pri font-semibold tracking-[0.9em] tshadow-glow border-b border-pri/30 uppercase'
+      >
+        Projects
+      </h1>
 
-        {/* Bio */}
-        <div className='w-full h-full max-h-9/10 p-section'>
-          <PortfolioCard1 />
-        </div>
+      <div className='w-full p-section'>
+        <ProjectCards>
+          <ProjectCard />
+          <DividerHorizontal />
+          <ProjectCard />
+          <DividerHorizontal />
+          <ProjectCard />
+          <DividerHorizontal />
+          <ProjectCard />
+        </ProjectCards>
       </div>
     </section>
   );
