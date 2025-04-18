@@ -1,7 +1,18 @@
 {
   "compilerOptions": {
+    "baseUrl": ".",
     "paths": {
-      "@/*": ["./*"]
-    }
-  }
+      "@/*": ["./app/*"],
+      "@components/*": ["./app/_components/*"],
+      "@portfolio/*": ["./app/_portfolio/*"],
+      "@projects/*": ["./app/_projects/*"],
+      "@styles/*": ["./app/styles/*"]
+    },
+    "jsx": "preserve",
+    "module": "ESNext",
+    "moduleResolution": "node",
+    "target": "ESNext"
+  },
+  "exclude": ["node_modules", ".next", "out"],
+  "include": ["app"]
 }

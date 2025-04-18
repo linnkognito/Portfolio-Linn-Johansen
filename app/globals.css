@@ -22,8 +22,7 @@
     font-family: var(--font-heading);
   }
   ::selection {
-    /* color: #01030a */
-    background-color: rgba(252, 37, 105, 0.6);
+    @apply bg-[var(--color-acc)]/60;
   }
 }
 

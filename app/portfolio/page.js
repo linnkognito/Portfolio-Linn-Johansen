@@ -1,6 +1,6 @@
-import ProjectCards from '../_portfolio/ProjectCards';
-import ProjectCard from '@/app/_projects/ProjectCard';
-import DividerHorizontal from '../_components/DividerHorizontal';
+import ProjectCards from '@portfolio/ProjectCards';
+import ProjectCard from '@projects/ProjectCard';
+import DividerHorizontal from '@components/DividerHorizontal';
 
 function Page() {
   return (
