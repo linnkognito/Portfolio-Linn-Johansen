@@ -7,17 +7,19 @@ import ProjectCardDescription from '@_portfolio/project-card-1/ProjectCardDescri
 import ModernPortfolioButton from '@_showcase-components/ModernPortfolioButton';
 import ProjectCardImage from '@/_projects/ProjectCardImage';
 import ContainerPill from '@/_components/ContainerPill';
-import ProjectFeatures from '@/_projects/ProjectFeatures';
 import InfoCard from '@/_components/InfoCard';
 import ProjectCardActionButtons from '@/_portfolio/ProjectCardActionButtons';
+import ProjectSection from '@/_projects/ProjectSection';
 
 function Page({ title = 'Example project' }) {
-  const projectFeatures = [
-    { label: 'Global state', value: 'Redux Toolkit' },
-    { label: 'Headless CMS', value: 'Sanity.io' },
-    { label: 'Routing', value: 'React Router' },
-    { label: 'Styling', value: 'Tailwind CSS' },
-  ];
+  const project = {
+    title: 'Portfolio Template',
+    tech: [
+      { title: 'Sanity', icon: <Sanity /> },
+      { title: 'React.js', icon: <Reactjs /> },
+      { title: 'Tailwind CSS', icon: <Tailwind /> },
+    ],
+  };
 
   return (
     <section
@@ -30,8 +32,11 @@ function Page({ title = 'Example project' }) {
       >
         {title}
       </h1>
-
       <article className='flex flex-col gap-10 p-section'>
+        {/* -------------------------------------------------- */}
+
+        {/* Tech + Main image */}
+
         <section className='flex gap-6 pl-8 pr-4'>
           <ContainerPill className='mt-10'>
             <TechIcons direction='col'>
@@ -41,7 +46,6 @@ function Page({ title = 'Example project' }) {
             </TechIcons>
           </ContainerPill>
 
-          {/* <div className='relative w-full max-w-3/4 aspect-[16/9] border border-pri/50 rounded-xs shadow shadow-pri/50'> */}
           <div className='relative w-full max-w-3/4 aspect-[16/9] border border-bgr/10 rounded-xs shadow-xl shadow-bgr'>
             <Image
               src='/simon-lee-david.jpg'
@@ -54,7 +58,13 @@ function Page({ title = 'Example project' }) {
 
         {/* -------------------------------------------------- */}
 
-        <section className='flex-center gap-10 bg-sec/10 p-div rounded-xs border border-pri/30  shadow-xl shadow-bgr/30'>
+        {/* Slideshow */}
+        <ProjectSection background={false}>Slideshow</ProjectSection>
+
+        {/* -------------------------------------------------- */}
+
+        {/* About */}
+        <ProjectSection background={true}>
           <div className='flex-center flex-col gap-4 w-full max-w-1/2 p-div'>
             <h2
               className='text-heading text-acc tshadow-acc text-xl font-semibold tracking-[0.75em] uppercase'
@@ -74,12 +84,12 @@ function Page({ title = 'Example project' }) {
               className='object-cover object-center rounded-xs'
             />
           </div>
-        </section>
+        </ProjectSection>
 
         {/* -------------------------------------------------- */}
 
         {/* UI Showcase */}
-        <section className='flex gap-10 w-full px-10 my-10'>
+        <ProjectSection background={false}>
           <div className='flex flex-col gap-4 w-1/3 p-section bg-bgr/80 border border-pri/30 rounded-xs shadow-xl shadow-sdw/30'>
             <ModernPortfolioButton className='w-full text-xl'>
               Small
@@ -111,11 +121,12 @@ function Page({ title = 'Example project' }) {
               className='self-end'
             />
           </div>
-        </section>
+        </ProjectSection>
 
         {/* -------------------------------------------------- */}
 
-        <section className='flex-center gap-10 w-full h-fit p-section rounded-xs bg-sec/10 border border-pri/30 shadow-xl shadow-bgr/30'>
+        {/* Features */}
+        <ProjectSection background={true}>
           <div className='flex flex-col gap-4 w-full max-w-3/5 p-section'>
             <h2
               className='pl-4 text-heading text-acc tshadow-acc text-xl font-semibold tracking-[0.75em] uppercase'
@@ -139,11 +150,12 @@ function Page({ title = 'Example project' }) {
               <ProjectCardImage src='/rick-rothenberg.jpg' />
             </div>
           </div>
-        </section>
+        </ProjectSection>
 
         {/* -------------------------------------------------- */}
 
-        <section className='flex gap-8 w-full px-10 mt-15'>
+        {/* Cards */}
+        <ProjectSection background={false}>
           <InfoCard title='Card 1'>
             <p className='text-justify'>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
@@ -163,7 +175,7 @@ function Page({ title = 'Example project' }) {
               aliquip ex ea commodo consequat.
             </p>
           </InfoCard>
-        </section>
+        </ProjectSection>
       </article>
     </section>
   );
