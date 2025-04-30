@@ -14,23 +14,26 @@ function Slideshow({ images = [] }) {
 
   return (
     <div className='w-full h-fit flex-center flex-col gap-8'>
-      <div className='flex-center gap-8 w-full min-h-fit'>
+      <div className='flex-center gap-6 w-full min-h-fit'>
         <SlideshowImage
           image={images[prevIndex]}
           index={prevIndex}
-          setCurrentIndex={setCurrentIndex}
           position='left'
+          animate={prevControls}
+          setCurrentIndex={minimizeSlide}
         />
         <SlideshowImage
           image={images[currentIndex]}
           index={currentIndex}
           current={true}
-          setCurrentIndex={setCurrentIndex}
+          animate={currentControls}
+          setCurrentIndex={minimizeSlide}
         />
         <SlideshowImage
           image={images[nextIndex]}
           index={nextIndex}
-          setCurrentIndex={setCurrentIndex}
+          animate={nextControls}
+          setCurrentIndex={minimizeSlide}
         />
       </div>
 

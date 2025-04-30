@@ -10,7 +10,7 @@ import ContainerPill from '@/_components/ContainerPill';
 import InfoCard from '@/_components/InfoCard';
 import ProjectCardActionButtons from '@/_portfolio/ProjectCardActionButtons';
 import ProjectSection from '@/_projects/ProjectSection';
-import Slideshow from '@/_components/Slideshow';
+import Carousel from '@/_components/Carousel';
 
 function Page({ title = 'Example project' }) {
   const project = {
@@ -21,6 +21,10 @@ function Page({ title = 'Example project' }) {
       { title: 'Tailwind CSS', icon: <Tailwind /> },
     ],
     images: [
+      { src: '/rose.png', alt: 'Example image 1' },
+      { src: '/spike.png', alt: 'Example image 2' },
+      { src: '/simon-lee-david.jpg', alt: 'Example image 3' },
+      { src: '/vackground-com.jpg', alt: 'Example image 4' },
       { src: '/rose.png', alt: 'Example image 1' },
       { src: '/spike.png', alt: 'Example image 2' },
       { src: '/simon-lee-david.jpg', alt: 'Example image 3' },
@@ -66,7 +70,8 @@ function Page({ title = 'Example project' }) {
 
         {/* Slideshow */}
         <ProjectSection background={false}>
-          <Slideshow images={project.images} />
+          {/* <Slideshow images={project.images} /> */}
+          <Carousel slides={project.images} />
         </ProjectSection>
 
         {/* -------------------------------------------------- */}
