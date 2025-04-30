@@ -2,7 +2,6 @@
 
 @layer base {
   @theme {
-    /* --color-bgr: #020618; */
     --color-bgr: #01030a;
     --color-txt: #f8fafc;
     --color-pri: #a5b4fc;
@@ -101,5 +100,23 @@
 
   .grad-pri {
     @apply bg-gradient-to-r from-transparent to-[var(--color-acc)]/50;
+  }
+  .fade-x {
+    -webkit-mask-image: linear-gradient(
+      to right,
+      transparent 0%,
+      black 20%,
+      black 80%,
+      transparent 100%
+    );
+    mask-image: linear-gradient(
+      to right,
+      transparent 0%,
+      black 20%,
+      black 80%,
+      transparent 100%
+    );
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat;
   }
 }

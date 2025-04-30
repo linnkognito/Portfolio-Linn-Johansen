@@ -1,9 +1,15 @@
 import Image from 'next/image';
 
-function SlideshowImage({ image, index, setCurrentIndex, current = false }) {
+function SlideshowImage({
+  image,
+  index,
+  position,
+  current = false,
+  setCurrentIndex,
+}) {
   return (
     <div
-      className={`relative aspect-[16/9] w-1/3 h-full p-section rounded-xs overflow-hidden bg-bgr shadow-around-glow transition-transform duration-300 ease-in-out cursor-pointer ${
+      className={`relative aspect-[16/9] w-1/3 h-full p-section rounded-xs overflow-hidden bg-bgr border border-bgr/10 shadow-md shadow-bgr/50 transition-transform duration-300 ease-in-out cursor-pointer ${
         current
           ? 'hover:scale-110 z-10'
           : 'opacity-70 hover:scale-110 hover:opacity-100'
@@ -17,7 +23,15 @@ function SlideshowImage({ image, index, setCurrentIndex, current = false }) {
         fill
         className='object-cover object-center'
       />
-      {!current && <div className='absolute inset-0 bg-bgr/20' />}
+
+      {/* Gradient */}
+      {!current && (
+        <div
+          className={`absolute inset-0 from-bgr to-transparent hover:opacity-0 transition-opacity duration-300 ease-in-out ${
+            position === 'left' ? 'bg-gradient-to-r' : 'bg-gradient-to-l'
+          }`}
+        />
+      )}
     </div>
   );
 }

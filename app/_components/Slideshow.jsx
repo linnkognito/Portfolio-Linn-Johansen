@@ -2,6 +2,7 @@
 
 import { useState } from 'react';
 import SlideshowImage from './SlideshowImage';
+import SlideshowButtons from './SlideshowButtons';
 
 function Slideshow({ images = [] }) {
   if (!images.length) return null;
@@ -12,24 +13,32 @@ function Slideshow({ images = [] }) {
   const nextIndex = currentIndex === lastIndex ? 0 : currentIndex + 1;
 
   return (
-    <div className='flex-center gap-10 w-full h-fit py-6'>
-      <SlideshowImage
-        image={images[prevIndex]}
-        index={prevIndex}
-        setCurrentIndex={setCurrentIndex}
-        current={false}
-      />
-      <SlideshowImage
-        image={images[currentIndex]}
+    <div className='w-full h-fit flex-center flex-col gap-8'>
+      <div className='flex-center gap-8 w-full min-h-fit'>
+        <SlideshowImage
+          image={images[prevIndex]}
+          index={prevIndex}
+          setCurrentIndex={setCurrentIndex}
+          position='left'
+        />
+        <SlideshowImage
+          image={images[currentIndex]}
+          index={currentIndex}
+          current={true}
+          setCurrentIndex={setCurrentIndex}
+        />
+        <SlideshowImage
+          image={images[nextIndex]}
+          index={nextIndex}
+          setCurrentIndex={setCurrentIndex}
+        />
+      </div>
+
+      <SlideshowButtons
+        amount={images.length}
         index={currentIndex}
         setCurrentIndex={setCurrentIndex}
-        current={true}
-      />
-      <SlideshowImage
-        image={images[nextIndex]}
-        index={nextIndex}
-        setCurrentIndex={setCurrentIndex}
-        current={false}
+        position='right'
       />
     </div>
   );
