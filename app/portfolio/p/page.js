@@ -1,12 +1,10 @@
 import { Reactjs, Sanity, Tailwind } from '@react-symbols/icons';
-import InfoCard from '@/_components/InfoCard';
 import ProjectSection from '@/_components/projects/ProjectSection';
 import EmblaCarousel from '@/_components/carousel/EmblaCarousel';
 import PageHeading from '@/_components/PageHeading';
 import ProjectHero from '@/_components/projects/ProjectHero';
 import ProjectAbout from '@/_components/projects/ProjectAbout';
 import ProjectUiUx from '@/_components/projects/ProjectUiUx';
-import TextLink from '@/_components/TextLink';
 import ProjectFeatureCards from '@/_components/projects/ProjectFeatureCards';
 
 function Page({ title = 'Example project' }) {
