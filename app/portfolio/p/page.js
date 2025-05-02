@@ -11,6 +11,7 @@ import InfoCard from '@/_components/InfoCard';
 import ProjectCardActionButtons from '@/_portfolio/ProjectCardActionButtons';
 import ProjectSection from '@/_projects/ProjectSection';
 import Carousel from '@/_components/Carousel';
+import EmblaCarousel from '@/_components/EmblaCarousel';
 
 function Page({ title = 'Example project' }) {
   const project = {
@@ -71,7 +72,11 @@ function Page({ title = 'Example project' }) {
         {/* Slideshow */}
         <ProjectSection background={false}>
           {/* <Slideshow images={project.images} /> */}
-          <Carousel slides={project.images} />
+          {/* <Carousel slides={project.images} /> */}
+          <EmblaCarousel
+            slides={project.images}
+            options={{ dragFree: true, loop: true }}
+          />
         </ProjectSection>
 
         {/* -------------------------------------------------- */}
