@@ -1,7 +1,9 @@
+import PageHeading from '@/_components/PageHeading';
+
 function Page() {
   return (
     <div>
-      <h1>About</h1>
+      <PageHeading>About</PageHeading>
       {/* Bio */}
       <div className='w-full max-w-1/3 pl-4 pt-6 text-justify'>
         <h2 className='text-par text-indigo-200'>

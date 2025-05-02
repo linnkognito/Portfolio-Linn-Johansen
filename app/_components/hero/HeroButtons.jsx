@@ -1,7 +1,7 @@
 import { ChatBubbleLeftEllipsisIcon } from '@heroicons/react/24/outline';
 import Link from 'next/link';
-import ButtonCTA from '../_components/ButtonCTA';
-import Separator from '../_components/Separator';
+import ButtonCTA from '@_components/ButtonCTA';
+import Separator from '@/_components/dividers/Separator';
 
 function HeroButtons({ className = '' }) {
   return (

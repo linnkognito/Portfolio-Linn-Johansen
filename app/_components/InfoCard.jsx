@@ -1,19 +1,32 @@
-import DividerHorizontal from './DividerHorizontal';
+import DividerHorizontal from './dividers/DividerHorizontal';
 import ButtonCTA from './ButtonCTA';
+import SectionHeading from './SectionHeading';
 
-function InfoCard({ children, title = '', width = 'w-full max-w-1/3' }) {
+function InfoCard({
+  children,
+  title = '',
+  width = 'w-full max-w-1/3',
+  button = null,
+}) {
   return (
     <div
       className={`flex flex-col gap-2 h-[400px] p-div bg-bgr/40 rounded-xs border border-pri/40 shadow-lg shadow-sdw/40 ${width}`}
     >
-      <h3 className='text-center text-heading text-txt tshadow-txt text-lg font-semibold tracking-[0.75em] uppercase'>
+      <SectionHeading tag='h3' color='pop' className='text-center'>
         {title}
-      </h3>
+      </SectionHeading>
+
       <DividerHorizontal />
+
       <div className='flex-1 overflow-auto py-2 px-4'>{children}</div>
-      <ButtonCTA type='right' className='mt-auto text-pop'>
-        More
-      </ButtonCTA>
+
+      <DividerHorizontal />
+
+      {button && (
+        <ButtonCTA type='right' className='mt-auto text-pop'>
+          {button}
+        </ButtonCTA>
+      )}
     </div>
   );
 }

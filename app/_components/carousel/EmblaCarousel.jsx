@@ -1,14 +1,18 @@
 'use client';
 
+import '@_styles/embla.css';
 import { useCallback, useEffect, useRef } from 'react';
 import useEmblaCarousel from 'embla-carousel-react';
 import {
   NextButton,
   PrevButton,
   usePrevNextButtons,
-} from './EmblaCarouselArrowButtons';
-import { DotButton, useDotButton } from './EmblaCarouselDotButton';
-import ContainerPill from './ContainerPill';
+} from '@/_components/carousel/EmblaCarouselArrowButtons';
+import {
+  DotButton,
+  useDotButton,
+} from '@/_components/carousel/EmblaCarouselDotButton';
+import ContainerPill from '@_components/ContainerPill';
 
 const TWEEN_FACTOR_BASE = 0.2;
 
@@ -91,7 +95,7 @@ const EmblaCarousel = (props) => {
   }, [emblaApi, tweenParallax]);
 
   return (
-    <div className='embla'>
+    <div className='embla flex-center flex-col mx-auto'>
       <div className='embla__viewport' ref={emblaRef}>
         <div className='embla__container'>
           {slides.map((slide, index) => (
@@ -116,12 +120,7 @@ const EmblaCarousel = (props) => {
       </div>
 
       <div className='embla__controls'>
-        <div className='embla__buttons'>
-          <PrevButton onClick={onPrevButtonClick} disabled={prevBtnDisabled} />
-          <NextButton onClick={onNextButtonClick} disabled={nextBtnDisabled} />
-        </div>
-
-        <ContainerPill className='embla__dots px-2 py-1 gap-2'>
+        <ContainerPill className='embla__dots px-2 py-1 gap-2 mx-auto'>
           {scrollSnaps.map((_, index) => (
             <DotButton
               key={index}

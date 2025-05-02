@@ -1,5 +1,5 @@
-import Logo from './Logo';
-import NavWrapper from './NavWrapper';
+import Logo from '@_components/Logo';
+import NavWrapper from '@_components/nav/NavWrapper';
 
 function Header({ ...props }) {
   return (

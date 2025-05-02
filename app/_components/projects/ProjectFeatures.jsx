@@ -1,4 +1,4 @@
-import ContainerPill from '../_components/ContainerPill';
+import ContainerPill from '../ContainerPill';
 
 function ProjectFeatures({
   features = [],

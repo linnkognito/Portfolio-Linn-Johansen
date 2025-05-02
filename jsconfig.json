@@ -4,11 +4,11 @@
     "paths": {
       "@/*": ["./app/*"],
       "@_components/*": ["./app/_components/*"],
-      "@_hero/*": ["./app/_hero/*"],
+      "@_hero/*": ["app/hero/*"],
       "@_portfolio/*": ["./app/_portfolio/*"],
-      "@_projects/*": ["./app/_projects/*"],
+      "@_projects/*": ["app/_components/projects/*"],
       "@_showcase-components/*": ["./app/_showcase-components/*"],
-      "@styles/*": ["./app/styles/*"]
+      "@_styles/*": ["./app/_styles/*"]
     },
     "jsx": "preserve",
     "module": "ESNext",

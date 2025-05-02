@@ -1,18 +1,21 @@
 import { Github } from '@react-symbols/icons';
 import Link from 'next/link';
 import ButtonCTA from '@_components/ButtonCTA';
-import Separator from '@_components/Separator';
+import Separator from '@/_components/dividers/Separator';
 
-function ProjectCardActionButtons({ className = '' }) {
+function ProjectCardActionButtons({ buttonCTA = 'Live', className = '' }) {
   return (
     <div
       className={`flex items-center justify-between gap-6 w-fit h-fit ${className}`}
       role='group'
       aria-label='Hero action buttons'
     >
-      <ButtonCTA ariaLabel='Learn more about this project'>
-        <Link href='/projects' className='tshadow-txt'>
-          Details
+      <ButtonCTA ariaLabel='Go to live version'>
+        <Link
+          href='/projects'
+          className='tshadow-txt hover:text-pop hover:tshadow-pop'
+        >
+          {buttonCTA}
         </Link>
       </ButtonCTA>
 
