@@ -11,7 +11,7 @@ function HeroButtons({ className = '' }) {
       aria-label='Hero action buttons'
     >
       <ButtonCTA ariaLabel='Discover projects'>
-        <Link href='/projects' className='tshadow-txt'>
+        <Link href='/portfolio' className='tshadow-txt'>
           Discover
         </Link>
       </ButtonCTA>
@@ -19,12 +19,12 @@ function HeroButtons({ className = '' }) {
       <Separator />
 
       <Link
-        href='/projects'
-        className='group py-1 tracking-widest uppercase flex-center gap-2 tshadow-txt font-medium group-hover:font-bold focus:outline-none focus:ring-2 focus:ring-pri focus:ring-offset-2'
+        href='/contact'
+        className='group py-1 tracking-widest uppercase flex-center gap-2 tshadow-txt font-medium hover:font-bold focus:outline-none focus:ring-2 focus:ring-pri focus:ring-offset-2'
         aria-label='Connect with me'
       >
         <ChatBubbleLeftEllipsisIcon
-          className='h-6 w-6 p-1 bg-pri/20 shadow-around rounded-full text-pri border border-indigo-300 group-hover:border-pri group-hover:bg-sec/20 anim-prep transition-colors'
+          className='h-6 w-6 p-1 bg-pri/20 shadow-around rounded-full text-pri border border-indigo-300 group-hover:border-txt group-hover:bg-sec/30 group-hover:tshadow-txt group-hover:shadow-sm group-hover:shadow-txt anim-prep transition-colors'
           aria-hidden='true'
         />
         Connect

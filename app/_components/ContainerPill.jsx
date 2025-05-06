@@ -7,6 +7,7 @@ function ContainerPill({
   const styles = {
     light: 'bg-pri/10 border-pri/20',
     dark: 'py-[2px] px-10 bg-bgr/65 border-pri/40',
+    pop: ' py-1 px-10 bg-txt/15 border-pri/80',
   };
 
   return (

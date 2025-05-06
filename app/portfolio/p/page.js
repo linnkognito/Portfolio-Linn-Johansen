@@ -6,6 +6,7 @@ import ProjectHero from '@/_components/projects/ProjectHero';
 import ProjectAbout from '@/_components/projects/ProjectAbout';
 import ProjectUiUx from '@/_components/projects/ProjectUiUx';
 import ProjectFeatureCards from '@/_components/projects/ProjectFeatureCards';
+import PageWrapper from '@/_components/PageWrapper';
 
 function Page({ title = 'Example project' }) {
   const project = {
@@ -32,10 +33,7 @@ function Page({ title = 'Example project' }) {
   };
 
   return (
-    <section
-      className='w-full min-h-fit p-section bg-sdw/5 rounded-xs backdrop-blur-xl'
-      aria-labelledby='portfolio-heading'
-    >
+    <PageWrapper theme='dark' aria-labelledby='portfolio-heading'>
       <PageHeading id='portfolio-heading'>{title}</PageHeading>
       <article className='flex flex-col items-center gap-10 p-section'>
         {/* Tech + Main image */}
@@ -66,7 +64,7 @@ function Page({ title = 'Example project' }) {
           <ProjectFeatureCards />
         </ProjectSection>
       </article>
-    </section>
+    </PageWrapper>
   );
 }
 

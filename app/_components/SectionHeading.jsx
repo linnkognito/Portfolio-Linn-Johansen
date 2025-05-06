@@ -4,6 +4,7 @@ function SectionHeading({
   children,
   tag: Tag = 'h2',
   id = '',
+  size = 'xl',
   stylized = false,
   color = 'txt',
   className = '',
@@ -15,13 +16,19 @@ function SectionHeading({
     txt: 'text-txt tshadow-txt',
   };
 
+  const fontSize = {
+    md: 'text-md',
+    lg: 'text-lg',
+    xl: 'text-xl',
+  };
+
   return (
     <>
       {stylized && <DividerHorizontal width='w-full' margin='mb-3' />}
 
       <Tag
         id={id}
-        className={`text-heading text-xl font-semibold tracking-[0.75em] uppercase ${colors[color]} ${className}`}
+        className={`text-heading font-semibold tracking-[0.75em] uppercase ${colors[color]} ${fontSize[size]} ${className}`}
         {...props}
       >
         {children}

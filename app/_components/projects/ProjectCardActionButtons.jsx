@@ -8,12 +8,12 @@ function ProjectCardActionButtons({ buttonCTA = 'Live', className = '' }) {
     <div
       className={`flex items-center justify-between gap-6 w-fit h-fit ${className}`}
       role='group'
-      aria-label='Hero action buttons'
+      aria-label='Portfolio project action buttons'
     >
-      <ButtonCTA ariaLabel='Go to live version'>
+      <ButtonCTA ariaLabel='Go to live version' className='group'>
         <Link
-          href='/projects'
-          className='tshadow-txt hover:text-pop hover:tshadow-pop'
+          href='/portfolio/p'
+          className='tshadow-txt group-hover:text-pop hover:tshadow-pop'
         >
           {buttonCTA}
         </Link>
@@ -21,8 +21,10 @@ function ProjectCardActionButtons({ buttonCTA = 'Live', className = '' }) {
 
       <Separator />
 
-      <Link
-        href='/projects'
+      <a
+        href='https://github.com/linnkognito'
+        target='_blank'
+        rel='noopener noreferrer'
         className='group py-1 tracking-widest uppercase flex-center gap-2 tshadow-txt font-medium hover:font-bold focus:outline-none focus:ring-2 focus:ring-pri focus:ring-offset-2'
         aria-label='Connect with me'
       >
@@ -31,7 +33,7 @@ function ProjectCardActionButtons({ buttonCTA = 'Live', className = '' }) {
           aria-hidden='true'
         />
         GitHub
-      </Link>
+      </a>
     </div>
   );
 }

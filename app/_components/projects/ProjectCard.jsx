@@ -38,7 +38,7 @@ function ProjectCard() {
           width='w-fit'
           className='shadow-md shadow-bgr/50'
         >
-          <ProjectCardActionButtons className='pl-1' />
+          <ProjectCardActionButtons buttonCTA='Details' className='pl-1' />
         </ContainerPill>
       </div>
     </div>

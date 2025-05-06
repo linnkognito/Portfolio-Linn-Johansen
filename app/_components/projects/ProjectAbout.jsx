@@ -17,7 +17,11 @@ function ProjectAbout() {
 
         <ProjectCardDescription width='w-full' expand={false} />
 
-        <ContainerPill theme='dark' width='w-8/10' className='mt-2 ml-4'>
+        <ContainerPill
+          theme='dark'
+          width='min-w-fit w-8/10'
+          className='mt-2 ml-4'
+        >
           <ProjectCardActionButtons
             buttonCTA='Live'
             buttonIcon='Code'

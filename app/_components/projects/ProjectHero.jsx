@@ -22,7 +22,7 @@ function ProjectHero({ project = null }) {
         </TechIcons>
       </ContainerPill>
 
-      <div className='relative w-full mx-auto aspect-[16/9] border border-bgr/10 rounded-xs shadow-xl shadow-sdw/30'>
+      <div className='relative w-full mx-auto aspect-[16/9] border border-bgr rounded-xs shadow-xl shadow-sdw/30'>
         <Image
           src={image.src}
           alt={image.alt}
