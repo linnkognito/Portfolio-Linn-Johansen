@@ -7,7 +7,6 @@ import ContainerPill from '@/_components/ContainerPill';
 import TechIcon from '@/_components/TechIcon';
 import DividerHorizontal from '@/_components/dividers/DividerHorizontal';
 import HeroButtons from '@/_components/hero/HeroButtons';
-import DividerVertical from '@/_components/dividers/DividerVertical';
 
 function Page() {
   return (
