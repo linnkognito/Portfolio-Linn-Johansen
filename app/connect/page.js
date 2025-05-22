@@ -1,3 +1,4 @@
+import DividerHorizontal from '@/_components/dividers/DividerHorizontal';
 import SectionHeading from '@/_components/SectionHeading';
 import {
   SocialLinkEmail,
@@ -21,15 +22,18 @@ function Page() {
       </div>
 
       {/* Contact info */}
-      <div className='flex flex-col items-end gap-2 w-full max-w-[600px] min-h-fit max-h-1/2 p-div'>
-        <div className='flex flex-col gap-2 w-full'>
-          <SocialName />
-          <SocialLocation />
-          <div className='flex gap-2 w-full'>
-            <SocialLinkGitHub />
-            <SocialLinkLinkedIn />
+      <div className='w-full p-section'>
+        <div className='flex flex-col items-end gap-2 w-full max-w-[600px] min-h-fit max-h-1/2 p-div bg-bgr/50 border border-pri/50 rounded-xs'>
+          <div className='flex flex-col gap-2 w-full'>
+            <SocialName />
+            <SocialLocation />
+            <DividerHorizontal />
+            <SocialLinkEmail />
+            <div className='flex gap-2 w-full'>
+              <SocialLinkGitHub />
+              <SocialLinkLinkedIn />
+            </div>
           </div>
-          <SocialLinkEmail />
         </div>
       </div>
     </article>

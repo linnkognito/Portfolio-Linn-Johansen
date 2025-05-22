@@ -23,7 +23,7 @@ function ProjectUiUx() {
           <SectionHeading stylized={true}>UI/UX</SectionHeading>
         </div>
 
-        <ProjectCardDescription expand={false} />
+        <ProjectCardDescription />
 
         <DividerHorizontal width='w-2/3' margin='mt-6' className='self-end' />
       </div>

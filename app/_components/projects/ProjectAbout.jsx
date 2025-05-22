@@ -1,9 +1,9 @@
 import Image from 'next/image';
-import DividerHorizontal from '../dividers/DividerHorizontal';
-import ProjectCardDescription from './ProjectCardDescription';
-import ContainerPill from '../ContainerPill';
-import ProjectCardActionButtons from './ProjectCardActionButtons';
-import SectionHeading from '../SectionHeading';
+import DividerHorizontal from '@_components/dividers/DividerHorizontal';
+import ProjectCardDescription from '@_components/projects/ProjectCardDescription';
+import ContainerPill from '@_components/ContainerPill';
+import ActionButtons from '@_components/ActionButtons';
+import SectionHeading from '@_components/SectionHeading';
 
 function ProjectAbout() {
   return (
@@ -15,17 +15,18 @@ function ProjectAbout() {
 
         <DividerHorizontal margin='m-0' width='w-full max-w-4/5' />
 
-        <ProjectCardDescription width='w-full' expand={false} />
+        <ProjectCardDescription width='w-full' />
 
         <ContainerPill
           theme='dark'
           width='min-w-fit w-8/10'
           className='mt-2 ml-4'
         >
-          <ProjectCardActionButtons
-            buttonCTA='Live'
+          <ActionButtons
+            buttonCTA={{ label: 'Live', href: '/' }}
             buttonIcon='Code'
             className='mx-auto pl-4'
+            aria-label='Portfolio project action buttons'
           />
         </ContainerPill>
       </div>
