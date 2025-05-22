@@ -1,3 +1,4 @@
+import { Reactjs, Sanity, Tailwind } from '@react-symbols/icons';
 import Image from 'next/image';
 import ContainerPill from '../ContainerPill';
 import TechIcon from '../TechIcon';
@@ -7,16 +8,22 @@ function ProjectHero({ project = null }) {
   if (!project) return null;
   const { technologies, mainImage: image } = project;
 
+  const iconComponents = {
+    sanity: <Sanity />,
+    reactjs: <Reactjs />,
+    tailwind: <Tailwind />,
+  };
+
   return (
     <>
       <ContainerPill className='mt-10'>
         <TechIcons direction='col'>
-          {technologies.map((tech) => (
+          {technologies?.map((tech) => (
             <TechIcon
               key={tech.title}
               title={tech.title}
               width='w-8'
-              icon={tech.icon}
+              icon={iconComponents[tech.icon]}
             />
           ))}
         </TechIcons>

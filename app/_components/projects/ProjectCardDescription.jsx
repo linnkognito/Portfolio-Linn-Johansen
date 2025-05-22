@@ -2,15 +2,15 @@ function ProjectCardDescription({
   children,
   width = 'max-w-4/5',
   padding = 'pt-2',
+  className = '',
 }) {
   return (
-    <p
-      className={`text-justify ${width} ${padding}`}
+    <div
+      className={`flex flex-col gap-2 text-justify ${width} ${padding} ${className}`}
       aria-describedby='project-name'
     >
-      {children ||
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.'}
-    </p>
+      {children}
+    </div>
   );
 }
 

@@ -1,0 +1,42 @@
+{
+  "id": "portfolio-template",
+  "title": "Portfolio Template",
+  "shortDescription": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+  "path": "portfolio/portfolio-template",
+  "technologies": [
+    { "title": "Sanity", "icon": "sanity" },
+    { "title": "React.js", "icon": "reactjs" },
+    { "title": "Tailwind CSS", "icon": "Tailwind" }
+  ],
+  "mainImage": {
+    "src": "/creativeportfolio-mockup.png",
+    "alt": "Mockup images of project: Creative Portfolio"
+  },
+  "aboutImage": {
+    "src": "/simon-lee-david.jpg",
+    "alt": "Digital art of David by Simon Lee"
+  },
+  "images": [
+    { "src": "/creativeportfolio-1.png", "alt": "Hero image" },
+    {
+      "src": "/creativeportfolio-2.png",
+      "alt": "About page for large screens"
+    },
+    {
+      "src": "/creativeportfolio-2-sm-screens.png",
+      "alt": "About page for medium and small screens"
+    },
+    {
+      "src": "/creativeportfolio-3.png",
+      "alt": "Portfolio project grid plus preview of hover effect"
+    },
+    {
+      "src": "/creativeportfolio-4.png",
+      "alt": "Contact section plus preview of hover effect"
+    }
+  ],
+  "links": {
+    "live": "https://demo-creativeportfolio.netlify.app/",
+    "github": "https://github.com/linnkognito/"
+  }
+}

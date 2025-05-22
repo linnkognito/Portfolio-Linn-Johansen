@@ -3,7 +3,9 @@ import SectionHeading from '../SectionHeading';
 import ProjectCardDescription from './ProjectCardDescription';
 import ModernPortfolioButton from './showcase/ModernPortfolioButton';
 
-function ProjectUiUx() {
+function ProjectUiUx({ project = null }) {
+  if (!project) return null;
+
   return (
     <>
       <div className='flex flex-col gap-4 w-1/3 p-section bg-bgr/80 border border-pri/30 rounded-xs shadow-xl shadow-sdw/30'>
