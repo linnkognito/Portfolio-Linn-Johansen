@@ -1,4 +1,4 @@
-import project from '@/portfolio/portfolio-template/portfolio-template-data';
+import project from '@/portfolio/_data/portfolio-template-data';
 
 import { Reactjs, Sanity, Tailwind } from '@react-symbols/icons';
 import { Bold } from '@/_components/TextStyles';

@@ -1,4 +1,8 @@
-import portfolioTemplate from '@/portfolio/portfolio-template/portfolio-template-data';
+import portfolioTemplate from '@/portfolio/_data/portfolio-template-data';
+import morningstar from '@/portfolio/_data/morningstar-data';
+import firstPortfolio from '@/portfolio/_data/first-portfolio-data';
+import arrayWorkout from '@/portfolio/_data/array-workout-data';
+import natours from '@/portfolio/_data/natours-data';
 
 import PageHeading from '@/_components/PageHeading';
 import PageWrapper from '@/_components/PageWrapper';
@@ -7,7 +11,13 @@ import ProjectCard from '@/_components/projects/ProjectCard';
 import DividerHorizontal from '@/_components/dividers/DividerHorizontal';
 
 function Page() {
-  const projects = [portfolioTemplate];
+  const projects = [
+    morningstar,
+    portfolioTemplate,
+    firstPortfolio,
+    natours,
+    arrayWorkout,
+  ];
 
   return (
     <PageWrapper aria-labelledby='portfolio-heading'>
@@ -16,10 +26,10 @@ function Page() {
       <div className='p-section'>
         <ProjectCards>
           {projects.map((project, i) => (
-            <>
-              <ProjectCard key={project.id} project={project} />
+            <div key={project.id} className='flex-center flex-col gap-4 w-full'>
+              <ProjectCard project={project} />
               {i !== projects.length - 1 && <DividerHorizontal />}
-            </>
+            </div>
           ))}
         </ProjectCards>
       </div>

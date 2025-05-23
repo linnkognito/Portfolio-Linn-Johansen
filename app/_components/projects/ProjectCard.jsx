@@ -7,7 +7,13 @@ import ContainerPill from '@/_components/ContainerPill';
 function ProjectCard({ project = null }) {
   if (!project) return null;
 
-  const { title, shortDescription: description, path, mainImage } = project;
+  const {
+    title,
+    shortDescription: description,
+    path,
+    mainImage,
+    links,
+  } = project;
 
   return (
     <div className='flex flex-col lg:flex-row gap-4 w-full h-auto px-4 py-4 bg-bgr/85 border border-pri/50 rounded-xs backdrop-blur-lg shadow-md shadow-sdw/50'>
@@ -42,6 +48,7 @@ function ProjectCard({ project = null }) {
         <ContainerPill theme='dark' className='shadow-md shadow-bgr/50'>
           <ActionButtons
             buttonCTA={{ label: 'Details', href: path }}
+            buttonGithub={{ href: links.github }}
             aria-label='Portfolio project action buttons'
             className='pl-1'
           />

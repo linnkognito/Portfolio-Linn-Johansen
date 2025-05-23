@@ -9,6 +9,9 @@
     --color-sdw: #6366f1;
     --color-acc: #fc2569;
     --color-pop: #d9f99d;
+
+    /* Morningstar Demo */
+    --color-zest: #dceb59;
   }
   html {
     color: var(--color-txt);
@@ -70,6 +73,15 @@
   }
   .shadow-subtle {
     box-shadow: 0 0 10px var(--color-txt);
+  }
+  .shadow-subtle-pri {
+    box-shadow: 0 0 10px var(--color-pri);
+  }
+  .shadow-subtle-pop {
+    box-shadow: 0 0 10px var(--color-pop);
+  }
+  .shadow-subtle-sdw {
+    box-shadow: 0 0 10px var(--color-sdw);
   }
 
   .tshadow-glow {

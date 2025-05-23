@@ -1,0 +1,33 @@
+{
+  "id": "natours",
+  "title": "Natours",
+  "shortDescription": "A full-featured tour booking app with JWT auth, role-based access, and MongoDB modeling. Includes Stripe payment simulation, email integration, and server-side rendering with Pug. Built as part of Jonas Schmedtmann’s Node.js course.",
+  "path": "portfolio/natours",
+  "technologies": [
+    { "title": "React.js", "icon": "reactjs" },
+    { "title": "Node.js", "icon": "nodejs" },
+    { "title": "Tailwind CSS", "icon": "tailwind" }
+  ],
+  "mainImage": {
+    "src": "/natours-1.png",
+    "alt": "Home page of project: Natours"
+  },
+  "aboutImage": false,
+  "images": [
+    { "src": "/natours-1.png", "alt": "Product page" },
+    {
+      "src": "/natours-2.png",
+      "alt": "Product page details - menus and hover effects"
+    },
+    {
+      "src": "/natours-3.png",
+      "alt": "Home page for small screens and dropdown menu"
+    }
+  ],
+  "links": {
+    "live": "https://natours-314n.onrender.com/",
+    "github": "https://github.com/linnkognito/natours"
+  },
+  "courseWork": true,
+  "underConstruction": false
+}

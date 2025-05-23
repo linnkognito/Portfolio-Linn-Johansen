@@ -1,0 +1,39 @@
+{
+  "id": "array-workout",
+  "title": "Array Workout",
+  "shortDescription": "A beginner-friendly Create React App built as my first React project, designed to make learning JavaScript array methods more fun.",
+  "path": "portfolio/array-workout",
+  "technologies": [
+    { "title": "React.js", "icon": "reactjs" },
+    { "title": "Tailwind CSS", "icon": "tailwind" }
+  ],
+  "mainImage": {
+    "src": "/array-workout-1.png",
+    "alt": "Home page of project: array-workout"
+  },
+  "aboutImage": {
+    "src": "/array-workout-about.png",
+    "alt": "Homepage"
+  },
+  "images": [
+    { "src": "/array-workout-2.png", "alt": "Array exercise card" },
+    {
+      "src": "/array-workout-3.png",
+      "alt": "Array exercise card, showing clues"
+    },
+    {
+      "src": "/array-workout-4.png",
+      "alt": "Method Cheat Sheet page"
+    },
+    {
+      "src": "/array-workout-5.png",
+      "alt": "Array Quiz after giving a correct answer"
+    }
+  ],
+  "links": {
+    "live": "https://arrayworkout.netlify.app/",
+    "github": "https://github.com/linnkognito/Arrays"
+  },
+  "courseWork": false,
+  "underConstruction": false
+}

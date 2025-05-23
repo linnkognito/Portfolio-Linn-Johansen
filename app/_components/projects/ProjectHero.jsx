@@ -1,4 +1,4 @@
-import { Reactjs, Sanity, Tailwind } from '@react-symbols/icons';
+import { Node, Reactjs, Sanity, Tailwind, Vite } from '@react-symbols/icons';
 import Image from 'next/image';
 import ContainerPill from '../ContainerPill';
 import TechIcon from '../TechIcon';
@@ -9,9 +9,11 @@ function ProjectHero({ project = null }) {
   const { technologies, mainImage: image } = project;
 
   const iconComponents = {
-    sanity: <Sanity />,
+    nodejs: <Node />,
     reactjs: <Reactjs />,
+    sanity: <Sanity />,
     tailwind: <Tailwind />,
+    vite: <Vite />,
   };
 
   return (
@@ -29,13 +31,15 @@ function ProjectHero({ project = null }) {
         </TechIcons>
       </ContainerPill>
 
-      <div className='relative w-full mx-auto aspect-[16/9] border border-bgr rounded-xs shadow-xl shadow-sdw/30'>
-        <Image
-          src={image.src}
-          alt={image.alt}
-          fill
-          className='object-cover object-center rounded-xs'
-        />
+      <div className='relative w-full mx-auto aspect-[16/9] border border-pri/30 rounded-xs shadow-xl shadow-sdw/30'>
+        <div className='relative aspect-[16/9] m-4 rounded-xs shadow-subtle-pri'>
+          <Image
+            src={image.src}
+            alt={image.alt}
+            fill
+            className='object-cover object-center border border-pri rounded-xs'
+          />
+        </div>
       </div>
     </>
   );

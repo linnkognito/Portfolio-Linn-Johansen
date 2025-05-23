@@ -1,0 +1,34 @@
+{
+  "id": "first-portfolio",
+  "title": "My First Portfolio",
+  "shortDescription": "My first portfolio site and also one of my earliest React projects. It’s a single-page app inspired by futuristic designs that reflects my early exploration into frontend development.",
+  "description": "My first developer portfolio and one of my earliest React projects. It's a single-page app (SPA) built with Vite, React 18, and styled using both Tailwind CSS and Material UI. The site features a futuristic aesthetic and was my intro to tools like React Query and other libraries like React Simple Maps. It’s a bit old now, but I still view it as a fun little milestone.",
+  "path": "portfolio/first-portfolio",
+  "technologies": [
+    { "title": "React.js", "icon": "reactjs" },
+    { "title": "Vite", "icon": "vite" },
+    { "title": "Tailwind CSS", "icon": "tailwind" }
+  ],
+  "mainImage": {
+    "src": "/first-portfolio-1.png",
+    "alt": "Top of the page: About section"
+  },
+  "aboutImage": false,
+  "images": [
+    { "src": "/first-portfolio-2.png", "alt": "Projects section" },
+    {
+      "src": "/first-portfolio-3.png",
+      "alt": "About section details"
+    },
+    {
+      "src": "/first-portfolio-4.png",
+      "alt": "Technlogies section"
+    }
+  ],
+  "links": {
+    "live": "https://linnkognito.com/",
+    "github": "https://github.com/linnkognito/Portfolio"
+  },
+  "courseWork": false,
+  "underConstruction": false
+}

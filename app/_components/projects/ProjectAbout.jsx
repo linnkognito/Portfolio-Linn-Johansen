@@ -13,7 +13,7 @@ function ProjectAbout({ children, image }) {
           image ? 'max-w-1/2' : ''
         } p-div`}
       >
-        <SectionHeading id='project-name' color='acc'>
+        <SectionHeading id='project-name' color='pop'>
           About
         </SectionHeading>
 
@@ -27,7 +27,7 @@ function ProjectAbout({ children, image }) {
         </ProjectCardDescription>
 
         <ContainerPill
-          theme='dark'
+          theme='borderPopDark'
           width='min-w-fit w-8/10'
           className='mt-2 ml-4'
         >

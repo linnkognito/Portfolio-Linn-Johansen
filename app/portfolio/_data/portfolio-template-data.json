@@ -1,7 +1,7 @@
 {
   "id": "portfolio-template",
   "title": "Portfolio Template",
-  "shortDescription": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+  "shortDescription": "Single-page React + Tailwind template, designed for showcasing digital art. Fully responsive and powered by Sanity CMS for easy updates.",
   "path": "portfolio/portfolio-template",
   "technologies": [
     { "title": "Sanity", "icon": "sanity" },
@@ -37,6 +37,8 @@
   ],
   "links": {
     "live": "https://demo-creativeportfolio.netlify.app/",
-    "github": "https://github.com/linnkognito/"
-  }
+    "github": "https://github.com/linnkognito/Portfolio-Template"
+  },
+  "courseWork": false,
+  "underConstruction": false
 }

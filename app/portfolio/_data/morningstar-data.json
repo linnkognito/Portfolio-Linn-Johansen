@@ -1,0 +1,38 @@
+{
+  "id": "morningstar",
+  "title": "Morningstar",
+  "shortDescription": "Responsive React frontend with API integration for live product data. Colorful layout, dynamic filtering, and real-world-ready design.",
+  "path": "portfolio/morningstar",
+  "technologies": [
+    { "title": "React.js", "icon": "reactjs" },
+    { "title": "Node.js", "icon": "nodejs" },
+    { "title": "Tailwind CSS", "icon": "tailwind" }
+  ],
+  "mainImage": {
+    "src": "/morningstar-mockup.png",
+    "alt": "Mockup images of project: Morningstar"
+  },
+  "aboutImage": false,
+  "images": [
+    { "src": "/morningstar-1.png", "alt": "Products page" },
+    {
+      "src": "/morningstar-2.png",
+      "alt": "Products page details - menus and hover effects"
+    },
+    {
+      "src": "/morningstar-3.png",
+      "alt": "Home page for small screens and dropdown menu"
+    },
+    {
+      "src": "/morningstar-4.png",
+      "alt": "Product page"
+    }
+  ],
+  "links": {
+    "live": "https://shop-morningstar.netlify.app/",
+    "github": "https://github.com/linnkognito/Morningstar",
+    "githubBackend": "https://github.com/linnkognito/Morningstar-Backend"
+  },
+  "courseWork": false,
+  "underConstruction": false
+}
