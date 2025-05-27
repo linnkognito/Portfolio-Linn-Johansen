@@ -14,6 +14,7 @@ import TechIcons from '@/_components/technologies/TechIcons';
 
 function ProjectHero({ project = null }) {
   if (!project) return null;
+
   const { technologies, mainImage: image } = project;
 
   const iconComponents = {

@@ -3,6 +3,7 @@ import DividerHorizontal from '@/_components/dividers/DividerHorizontal';
 import ProjectCardDescription from '@_components/projects/ProjectCardDescription';
 import ActionButtons from '@/_components/buttons/ActionButtons';
 import ContainerPill from '@/_components/containers/ContainerPill';
+import ProjectLabel from './ProjectLabel';
 
 function ProjectCard({ project = null }) {
   if (!project) return null;
@@ -13,6 +14,8 @@ function ProjectCard({ project = null }) {
     path,
     mainImage,
     links,
+    isCourseWork,
+    isUnderConstruction,
   } = project;
 
   return (
@@ -28,7 +31,12 @@ function ProjectCard({ project = null }) {
       </div>
 
       {/* Project Details Preview */}
-      <div className='flex flex-col gap-4 w-full lg:max-w-1/2 p-div'>
+      <div className='relative flex flex-col gap-4 w-full lg:max-w-1/2 p-div'>
+        {/* Label */}
+        <ProjectLabel
+          isCourseWork={isCourseWork}
+          isUnderConstruction={isUnderConstruction}
+        />
         <h2
           className='pl-2 text-2xl text-heading text-pop font-semibold tracking-[0.2em] uppercase'
           id='project-name'
@@ -38,6 +46,7 @@ function ProjectCard({ project = null }) {
 
         <DividerHorizontal margin='my-1' />
 
+        {/* Description */}
         <ProjectCardDescription width='w-full' padding='pl-1 pr-2'>
           {description}
         </ProjectCardDescription>

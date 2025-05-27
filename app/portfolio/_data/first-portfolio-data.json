@@ -29,6 +29,6 @@
     "live": "https://linnkognito.com/",
     "github": "https://github.com/linnkognito/Portfolio"
   },
-  "courseWork": false,
-  "underConstruction": false
+  "isCourseWork": false,
+  "isUnderConstruction": false
 }

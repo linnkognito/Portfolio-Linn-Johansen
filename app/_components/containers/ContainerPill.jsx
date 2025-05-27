@@ -10,6 +10,7 @@ function ContainerPill({
     pop: 'py-1 px-1 md:px-10 bg-txt/15 border-pri/80',
     borderPop: 'py-1 px-1 md:px-10 bg-txt/15 border-pop/80',
     borderPopDark: 'py-1 px-1 md:px-10 bg-bgr/65 border-pop/80',
+    label: 'px-2 text-xs tracking-wide bg-pop/20 border-pop/80',
   };
 
   return (

@@ -28,6 +28,6 @@
     "live": "https://natours-314n.onrender.com/",
     "github": "https://github.com/linnkognito/natours"
   },
-  "courseWork": true,
-  "underConstruction": false
+  "isCourseWork": true,
+  "isUnderConstruction": false
 }

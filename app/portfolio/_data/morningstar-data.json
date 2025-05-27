@@ -33,6 +33,6 @@
     "github": "https://github.com/linnkognito/Morningstar",
     "githubBackend": "https://github.com/linnkognito/Morningstar-Backend"
   },
-  "courseWork": false,
-  "underConstruction": false
+  "isCourseWork": false,
+  "isUnderConstruction": false
 }

@@ -40,6 +40,6 @@
     "live": "https://demo-creativeportfolio.netlify.app/",
     "github": "https://github.com/linnkognito/Portfolio-Template"
   },
-  "courseWork": false,
-  "underConstruction": false
+  "isCourseWork": false,
+  "isUnderConstruction": false
 }
