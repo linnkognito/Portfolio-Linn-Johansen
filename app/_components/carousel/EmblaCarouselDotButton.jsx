@@ -1,5 +1,5 @@
 import React, { useCallback, useEffect, useState } from 'react';
-import SlideshowButtons from '@_components/SlideshowButtons';
+import SlideshowButtons from '@/_components/buttons/SlideshowButtons';
 
 export const useDotButton = (emblaApi, onButtonClick) => {
   const [selectedIndex, setSelectedIndex] = useState(0);

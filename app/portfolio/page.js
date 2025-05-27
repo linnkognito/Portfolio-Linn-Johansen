@@ -4,8 +4,8 @@ import firstPortfolio from '@/portfolio/_data/first-portfolio-data';
 import arrayWorkout from '@/portfolio/_data/array-workout-data';
 import natours from '@/portfolio/_data/natours-data';
 
-import PageHeading from '@/_components/PageHeading';
-import PageWrapper from '@/_components/PageWrapper';
+import PageHeading from '@/_components/text/PageHeading';
+import PageWrapper from '@/_components/containers/PageWrapper';
 import ProjectCards from '@/_components/projects/ProjectCards';
 import ProjectCard from '@/_components/projects/ProjectCard';
 import DividerHorizontal from '@/_components/dividers/DividerHorizontal';

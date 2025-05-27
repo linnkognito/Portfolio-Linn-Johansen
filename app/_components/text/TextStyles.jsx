@@ -1,5 +1,5 @@
 export function Bold({ children }) {
-  return <span className='font-semibold'>{children}</span>;
+  return <span className='font-bold'>{children}</span>;
 }
 export function Italic({ children }) {
   return <span className='italic'>{children}</span>;

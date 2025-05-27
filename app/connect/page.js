@@ -1,5 +1,5 @@
 import DividerHorizontal from '@/_components/dividers/DividerHorizontal';
-import SectionHeading from '@/_components/SectionHeading';
+import SectionHeading from '@/_components/text/SectionHeading';
 import {
   SocialLinkEmail,
   SocialLinkGitHub,

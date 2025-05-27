@@ -1,4 +1,4 @@
-import NavLink from './NavLink';
+import NavLink from '@/_components/nav/NavLink';
 
 function Nav({ pathname = '/' }) {
   return (

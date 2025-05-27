@@ -26,7 +26,7 @@
     font-family: var(--font-heading);
   }
   ::selection {
-    @apply bg-[var(--color-acc)]/60;
+    @apply bg-[var(--color-pri)]/40;
   }
 }
 
@@ -47,6 +47,10 @@
   }
   .max-w-site {
     @apply max-w-[1500px];
+  }
+
+  .focus-ring {
+    @apply focus:outline-none focus:ring-2 focus:ring-pri focus:ring-offset-2;
   }
 
   .text-heading {

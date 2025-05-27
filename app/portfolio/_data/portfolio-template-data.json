@@ -4,9 +4,9 @@
   "shortDescription": "Single-page React + Tailwind template, designed for showcasing digital art. Fully responsive and powered by Sanity CMS for easy updates.",
   "path": "portfolio/portfolio-template",
   "technologies": [
-    { "title": "Sanity", "icon": "sanity" },
     { "title": "React.js", "icon": "reactjs" },
-    { "title": "Tailwind CSS", "icon": "Tailwind" }
+    { "title": "Sanity", "icon": "sanity" },
+    { "title": "Tailwind CSS", "icon": "tailwind" }
   ],
   "mainImage": {
     "src": "/creativeportfolio-mockup.png",
@@ -14,7 +14,8 @@
   },
   "aboutImage": {
     "src": "/simon-lee-david.jpg",
-    "alt": "Digital art of David by Simon Lee"
+    "alt": "Digital art of David by Simon Lee",
+    "orientation": "portrait"
   },
   "images": [
     { "src": "/creativeportfolio-1.png", "alt": "Hero image" },

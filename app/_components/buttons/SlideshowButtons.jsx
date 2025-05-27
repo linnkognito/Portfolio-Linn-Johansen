@@ -1,4 +1,4 @@
-import ContainerPill from './ContainerPill';
+import ContainerPill from '@/_components/containers/ContainerPill';
 
 function SlideshowButtons({ amount = 0, index = null, setCurrentIndex }) {
   if (!amount || index === null) return null;

@@ -12,7 +12,7 @@ import {
   DotButton,
   useDotButton,
 } from '@/_components/carousel/EmblaCarouselDotButton';
-import ContainerPill from '@_components/ContainerPill';
+import ContainerPill from '@/_components/containers/ContainerPill';
 
 const TWEEN_FACTOR_BASE = 0.2;
 

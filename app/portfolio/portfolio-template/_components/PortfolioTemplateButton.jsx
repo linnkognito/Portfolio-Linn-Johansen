@@ -1,4 +1,4 @@
-function ModernPortfolioButton({ children, className = '' }) {
+function PortfolioTemplateButton({ children, className = '' }) {
   const gradient =
     'bg-gradient-to-r from-transparent to-[rgba(252,37,105,0.5)] md:to-[rgba(252,37,105, 0.2)] hover:to-[rgba(252, 37, 105, 0.6)] md:hover:to-[rgba(252, 37, 105, 0.3)]';
 
@@ -17,4 +17,4 @@ function ModernPortfolioButton({ children, className = '' }) {
   );
 }
 
-export default ModernPortfolioButton;
+export default PortfolioTemplateButton;

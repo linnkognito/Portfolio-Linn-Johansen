@@ -29,11 +29,7 @@ function ButtonCTA({
         anim-prep 
         transition-colors 
         cursor-pointer
-        focus:outline-none 
-        focus:ring-2 
-        focus:ring-pri 
-        focus:ring-offset-2
-        focus:border-pri
+        focus-ring
         disabled:opacity-50 
         disabled:cursor-not-allowed
         ${styles[type]}

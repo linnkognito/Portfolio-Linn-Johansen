@@ -1,8 +1,8 @@
 import { Node, Reactjs, Sanity, Tailwind, Vite } from '@react-symbols/icons';
 import Image from 'next/image';
-import ContainerPill from '../ContainerPill';
-import TechIcon from '../TechIcon';
-import TechIcons from '../TechIcons';
+import ContainerPill from '@/_components/containers/ContainerPill';
+import TechIcon from '@/_components/technologies/TechIcon';
+import TechIcons from '@/_components/technologies/TechIcons';
 
 function ProjectHero({ project = null }) {
   if (!project) return null;

@@ -1,4 +1,4 @@
-import Logo from '@_components/Logo';
+import Logo from '@/_components/nav/Logo';
 import NavWrapper from '@_components/nav/NavWrapper';
 
 function Header({ ...props }) {

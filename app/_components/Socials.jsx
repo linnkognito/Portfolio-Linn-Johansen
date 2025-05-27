@@ -4,10 +4,10 @@ import {
   MapPinIcon,
   UserCircleIcon,
 } from '@heroicons/react/24/outline';
-import ContainerPill from './ContainerPill';
-import TechIcon from './TechIcon';
-import Separator from './dividers/Separator';
-import TextLink from './TextLink';
+import ContainerPill from '@/_components/containers/ContainerPill';
+import TechIcon from '@/_components/technologies/TechIcon';
+import Separator from '@/_components/dividers/Separator';
+import TextLink from '@/_components/text/TextLink';
 
 export function SocialLinkGitHub() {
   return (

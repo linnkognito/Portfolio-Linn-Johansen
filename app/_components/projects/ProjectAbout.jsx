@@ -1,11 +1,18 @@
 import Image from 'next/image';
 import DividerHorizontal from '@_components/dividers/DividerHorizontal';
 import ProjectCardDescription from '@_components/projects/ProjectCardDescription';
-import ContainerPill from '@_components/ContainerPill';
-import ActionButtons from '@_components/ActionButtons';
-import SectionHeading from '@_components/SectionHeading';
+import ContainerPill from '@/_components/containers/ContainerPill';
+import ActionButtons from '@/_components/buttons/ActionButtons';
+import SectionHeading from '@/_components/text/SectionHeading';
 
-function ProjectAbout({ children, image }) {
+function ProjectAbout({ children, project }) {
+  const { aboutImage: image, links } = project;
+
+  const imageOrientations = {
+    landscape: 'aspect-[16/9]',
+    portrait: 'aspect-[9/16]',
+  };
+
   return (
     <>
       <div
@@ -32,7 +39,8 @@ function ProjectAbout({ children, image }) {
           className='mt-2 ml-4'
         >
           <ActionButtons
-            buttonCTA={{ label: 'Live', href: '/' }}
+            buttonCTA={{ label: 'Live', href: links.live }}
+            buttonGithub={{ href: links.github }}
             className='mx-auto pl-4'
             aria-label='Portfolio project action buttons'
           />
@@ -40,7 +48,11 @@ function ProjectAbout({ children, image }) {
       </div>
 
       {image && (
-        <div className='relative w-full max-w-1/2 aspect-[16/9] shadow-lg shadow-bgr rounded-xs'>
+        <div
+          className={`relative w-full max-w-1/2 max-h-[450px]  shadow-subtle-sdw rounded-xs ${
+            imageOrientations[image.orientation || 'landscape']
+          }`}
+        >
           <Image
             src={image.src}
             alt={image.alt}

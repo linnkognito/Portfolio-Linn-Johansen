@@ -1,4 +1,4 @@
-import ActionButtons from '@_components/ActionButtons';
+import ActionButtons from '@/_components/buttons/ActionButtons';
 
 export default function Home() {
   return (

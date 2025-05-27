@@ -1,15 +1,16 @@
+import ProjectUiDemo from '@/_components/projects/ProjectUiDemo';
 import Image from 'next/image';
 
 function MorningstarUiDemo() {
   return (
-    <div className='relative aspect-[9/16] m-4  rounded-xs shadow-subtle-pri'>
+    <ProjectUiDemo image={true}>
       <Image
         src='/morningstar-small-nav.png'
         fill
         alt='Home page for small screens with dropdown navigation menu visible'
         className='object-center object-cover border border-pop rounded-xs'
       />
-    </div>
+    </ProjectUiDemo>
   );
 }
 

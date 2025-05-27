@@ -1,8 +1,8 @@
 import Image from 'next/image';
 import DividerHorizontal from '@/_components/dividers/DividerHorizontal';
 import ProjectCardDescription from '@_components/projects/ProjectCardDescription';
-import ActionButtons from '@/_components/ActionButtons';
-import ContainerPill from '@/_components/ContainerPill';
+import ActionButtons from '@/_components/buttons/ActionButtons';
+import ContainerPill from '@/_components/containers/ContainerPill';
 
 function ProjectCard({ project = null }) {
   if (!project) return null;

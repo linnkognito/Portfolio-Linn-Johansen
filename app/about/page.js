@@ -1,9 +1,9 @@
-import PageWrapper from '@/_components/PageWrapper';
-import PageHeading from '@/_components/PageHeading';
+import PageWrapper from '@/_components/containers/PageWrapper';
+import PageHeading from '@/_components/text/PageHeading';
 import Image from 'next/image';
 import DividerHorizontal from '@/_components/dividers/DividerHorizontal';
-import ContainerPill from '@/_components/ContainerPill';
-import ActionButtons from '@/_components/ActionButtons';
+import ContainerPill from '@/_components/containers/ContainerPill';
+import ActionButtons from '@/_components/buttons/ActionButtons';
 
 function Page() {
   return (

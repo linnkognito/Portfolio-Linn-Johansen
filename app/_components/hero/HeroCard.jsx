@@ -26,7 +26,7 @@ function HeroCard({ title, image, link }) {
       </figure>
       <Link
         href={link.href}
-        className='inline-block px-4 py-2 bg-pri/20 rounded-md hover:bg-pri/30 focus:outline-none focus:ring-2 focus:ring-pri focus:ring-offset-2 transition-colors'
+        className='inline-block px-4 py-2 bg-pri/20 rounded-md hover:bg-pri/30 focus-ring transition-colors'
         aria-label={`${link.label} - ${title}`}
       >
         {link.label}

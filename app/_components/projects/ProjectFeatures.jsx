@@ -1,5 +1,3 @@
-import ContainerPill from '../ContainerPill';
-
 function ProjectFeatures({
   features = [],
   width = 'w-full max-w-4/5',

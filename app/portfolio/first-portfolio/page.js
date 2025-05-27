@@ -1,4 +1,4 @@
-import project from '@/portfolio/_data/morningstar-data';
+import project from '@/portfolio/_data/first-portfolio-data';
 
 import ProjectSection from '@/_components/projects/ProjectSection';
 import EmblaCarousel from '@/_components/carousel/EmblaCarousel';
@@ -7,11 +7,8 @@ import ProjectHero from '@/_components/projects/ProjectHero';
 import ProjectAbout from '@/_components/projects/ProjectAbout';
 import ProjectUiUx from '@/_components/projects/ProjectUiUx';
 import PageWrapper from '@/_components/containers/PageWrapper';
-import MorningstarUiDemo from './_components/MorningstarUiDemo';
-import MorningstarAbout from './_components/MorningstarAbout';
-import MorningstarUiUx from './_components/MorningstarUiUx';
 import ProjectFeatureCards from '@/_components/projects/ProjectFeatureCards';
-import MorningstarFeatures from './_components/MorningstarFeatures';
+import FirstPortfolioAbout from './_components/FirstPortfolioAbout';
 
 function Page() {
   return (
@@ -27,7 +24,7 @@ function Page() {
         {/* About */}
         <ProjectSection theme='framed' className='w-8/10'>
           <ProjectAbout project={project}>
-            <MorningstarAbout />
+            <FirstPortfolioAbout />
           </ProjectAbout>
         </ProjectSection>
 
@@ -41,16 +38,12 @@ function Page() {
 
         {/* UI/UX */}
         <ProjectSection theme='framed' className='w-8/10'>
-          <ProjectUiUx project={project} UiDemo={<MorningstarUiDemo />}>
-            <MorningstarUiUx />
-          </ProjectUiUx>
+          <ProjectUiUx project={project} UiDemo={null}></ProjectUiUx>
         </ProjectSection>
 
         {/* Cards */}
         <ProjectSection theme='plain'>
-          <ProjectFeatureCards>
-            <MorningstarFeatures />
-          </ProjectFeatureCards>
+          <ProjectFeatureCards></ProjectFeatureCards>
         </ProjectSection>
       </article>
     </PageWrapper>

@@ -1,7 +1,7 @@
 import { Github } from '@react-symbols/icons';
 import { ChatBubbleLeftEllipsisIcon } from '@heroicons/react/24/outline';
 import Link from 'next/link';
-import ButtonCTA from '@_components/ButtonCTA';
+import ButtonCTA from '@/_components/buttons/ButtonCTA';
 import Separator from '@/_components/dividers/Separator';
 
 function ActionButtons({
@@ -33,7 +33,7 @@ function ActionButtons({
           href={buttonGithub?.href || 'https://github.com/linnkognito'}
           target='_blank'
           rel='noopener noreferrer'
-          className='group py-1 tracking-widest uppercase flex-center gap-2 tshadow-txt font-medium hover:font-bold focus:outline-none focus:ring-2 focus:ring-pri focus:ring-offset-2'
+          className='group py-1 tracking-widest uppercase flex-center gap-2 tshadow-txt font-medium hover:font-bold focus-ring'
           aria-label='Link to my GitHub'
         >
           <Github
@@ -47,7 +47,7 @@ function ActionButtons({
       {theme === 'hero' && (
         <Link
           href='/contact'
-          className='group py-1 tracking-widest uppercase flex-center gap-2 tshadow-txt font-medium hover:font-bold focus:outline-none focus:ring-2 focus:ring-pri focus:ring-offset-2'
+          className='group py-1 tracking-widest uppercase flex-center gap-2 tshadow-txt font-medium hover:font-bold focus-ring'
           aria-label='Connect with me'
         >
           <ChatBubbleLeftEllipsisIcon

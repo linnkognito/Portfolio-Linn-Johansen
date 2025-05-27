@@ -16,7 +16,7 @@ function NavLink({ children, href = '/', pathname = '/' }) {
         href={href}
         role='menuitem'
         aria-current={isActive ? 'page' : undefined}
-        className='focus:outline-none focus:ring-2 focus:ring-pri focus:ring-offset-2'
+        className='focus-ring'
       >
         {children}
       </Link>
