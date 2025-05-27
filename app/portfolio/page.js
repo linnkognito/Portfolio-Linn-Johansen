@@ -1,8 +1,9 @@
 import portfolioTemplate from '@/portfolio/_data/portfolio-template-data';
 import morningstar from '@/portfolio/_data/morningstar-data';
 import firstPortfolio from '@/portfolio/_data/first-portfolio-data';
-import arrayWorkout from '@/portfolio/_data/array-workout-data';
 import natours from '@/portfolio/_data/natours-data';
+import theWildOasis from '@/portfolio/_data/the-wild-oasis-website-data';
+// import arrayWorkout from '@/portfolio/_data/array-workout-data';
 
 import PageHeading from '@/_components/text/PageHeading';
 import PageWrapper from '@/_components/containers/PageWrapper';
@@ -16,7 +17,8 @@ function Page() {
     portfolioTemplate,
     firstPortfolio,
     natours,
-    arrayWorkout,
+    theWildOasis,
+    // arrayWorkout,
   ];
 
   return (

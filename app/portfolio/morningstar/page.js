@@ -2,7 +2,6 @@ import project from '@/portfolio/_data/morningstar-data';
 
 import ProjectSection from '@/_components/projects/ProjectSection';
 import EmblaCarousel from '@/_components/carousel/EmblaCarousel';
-import PageHeading from '@/_components/text/PageHeading';
 import ProjectHero from '@/_components/projects/ProjectHero';
 import ProjectAbout from '@/_components/projects/ProjectAbout';
 import ProjectUiUx from '@/_components/projects/ProjectUiUx';
@@ -12,10 +11,15 @@ import MorningstarAbout from './_components/MorningstarAbout';
 import MorningstarUiUx from './_components/MorningstarUiUx';
 import ProjectFeatureCards from '@/_components/projects/ProjectFeatureCards';
 import MorningstarFeatures from './_components/MorningstarFeatures';
+import PageHeading from '@/_components/text/PageHeading';
 
 function Page() {
   return (
-    <PageWrapper theme='dark' aria-labelledby='portfolio-heading'>
+    <PageWrapper
+      theme='dark'
+      aria-labelledby='portfolio-heading'
+      className='flex-center flex-col'
+    >
       <PageHeading id='portfolio-heading'>{project.title}</PageHeading>
 
       <article className='flex flex-col items-center gap-10 p-section'>

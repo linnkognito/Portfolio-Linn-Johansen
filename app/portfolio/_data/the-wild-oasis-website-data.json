@@ -1,0 +1,42 @@
+{
+  "id": "the-wild-oasis-website",
+  "title": "The Wild Oasis",
+  "shortDescription": "Final project of Jonas Schmedtmann's React Course. This is the customer-facing portion of the fictional luxury cabin rental company The Wild Oasis — built with Next.js and Supabase",
+  "path": "portfolio/coursework/the-wild-oasis",
+  "technologies": [
+    { "title": "React.js", "icon": "reactjs" },
+    { "title": "Next.js", "icon": "nextjs" },
+    { "title": "Supabase", "icon": "supabase" },
+    { "title": "Tailwind CSS", "icon": "tailwind" }
+  ],
+  "mainImage": {
+    "src": "/the-wild-oasis-web-1.png",
+    "alt": "Home page of The Wild Oasis website"
+  },
+  "aboutImage": null,
+  "images": [
+    {
+      "src": "/the-wild-oasis-web-2.png",
+      "alt": "Cabins page of The Wild Oasis website"
+    },
+
+    {
+      "src": "/the-wild-oasis-web-3.png",
+      "alt": "Cabin page of The Wild Oasis website"
+    },
+    {
+      "src": "/the-wild-oasis-web-4.png",
+      "alt": "Cabin page date picker, seen after scrolling down"
+    },
+    {
+      "src": "/the-wild-oasis-web-5",
+      "alt": "About page of The Wild Oasis website"
+    }
+  ],
+  "links": {
+    "live": "/",
+    "github": ""
+  },
+  "isCourseWork": true,
+  "isUnderConstruction": false
+}

@@ -1,9 +1,11 @@
 import {
   Js,
+  Next,
   Node,
   Pug,
   Reactjs,
   Sanity,
+  Supabase,
   Tailwind,
   Vite,
 } from '@react-symbols/icons';
@@ -19,10 +21,12 @@ function ProjectHero({ project = null }) {
 
   const iconComponents = {
     javascript: <Js />,
+    nextjs: <Next />,
     nodejs: <Node />,
     pug: <Pug />,
     reactjs: <Reactjs />,
     sanity: <Sanity />,
+    supabase: <Supabase />,
     tailwind: <Tailwind />,
     vite: <Vite />,
   };
