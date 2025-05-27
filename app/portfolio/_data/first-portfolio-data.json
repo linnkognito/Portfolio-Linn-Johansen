@@ -13,7 +13,7 @@
     "src": "/first-portfolio-1.png",
     "alt": "Top of the page: About section"
   },
-  "aboutImage": false,
+  "aboutImage": null,
   "images": [
     { "src": "/first-portfolio-2.png", "alt": "Projects section" },
     {

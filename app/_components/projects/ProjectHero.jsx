@@ -1,4 +1,12 @@
-import { Node, Reactjs, Sanity, Tailwind, Vite } from '@react-symbols/icons';
+import {
+  Js,
+  Node,
+  Pug,
+  Reactjs,
+  Sanity,
+  Tailwind,
+  Vite,
+} from '@react-symbols/icons';
 import Image from 'next/image';
 import ContainerPill from '@/_components/containers/ContainerPill';
 import TechIcon from '@/_components/technologies/TechIcon';
@@ -9,7 +17,9 @@ function ProjectHero({ project = null }) {
   const { technologies, mainImage: image } = project;
 
   const iconComponents = {
+    javascript: <Js />,
     nodejs: <Node />,
+    pug: <Pug />,
     reactjs: <Reactjs />,
     sanity: <Sanity />,
     tailwind: <Tailwind />,

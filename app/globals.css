@@ -12,6 +12,11 @@
 
     /* Morningstar Demo */
     --color-zest: #dceb59;
+
+    /* First Portfolio Demo */
+    --color-ice: #bdbfc3;
+    --color-dove: #888d9e;
+    --color-steel: #16161e;
   }
   html {
     color: var(--color-txt);

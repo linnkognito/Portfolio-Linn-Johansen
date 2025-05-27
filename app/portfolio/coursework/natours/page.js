@@ -1,12 +1,15 @@
-import project from '@/portfolio/_data/first-portfolio-data';
+import project from '@/portfolio/_data/natours-data';
 
 import ProjectSection from '@/_components/projects/ProjectSection';
 import EmblaCarousel from '@/_components/carousel/EmblaCarousel';
 import PageHeading from '@/_components/text/PageHeading';
 import ProjectHero from '@/_components/projects/ProjectHero';
 import ProjectAbout from '@/_components/projects/ProjectAbout';
+import ProjectUiUx from '@/_components/projects/ProjectUiUx';
 import PageWrapper from '@/_components/containers/PageWrapper';
-import FirstPortfolioAbout from './_components/FirstPortfolioAbout';
+import ProjectFeatureCards from '@/_components/projects/ProjectFeatureCards';
+import NatoursAbout from './_components/NatoursAbout';
+import NatoursFeatures from './_components/NatoursFeatures';
 
 function Page() {
   return (
@@ -22,7 +25,7 @@ function Page() {
         {/* About */}
         <ProjectSection theme='framed' className='w-8/10'>
           <ProjectAbout project={project}>
-            <FirstPortfolioAbout />
+            <NatoursAbout />
           </ProjectAbout>
         </ProjectSection>
 
@@ -32,6 +35,13 @@ function Page() {
             slides={project.images}
             options={{ dragFree: true, loop: true }}
           />
+        </ProjectSection>
+
+        {/* Cards */}
+        <ProjectSection theme='plain'>
+          <ProjectFeatureCards>
+            <NatoursFeatures />
+          </ProjectFeatureCards>
         </ProjectSection>
       </article>
     </PageWrapper>
