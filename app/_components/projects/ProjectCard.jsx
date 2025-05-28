@@ -54,7 +54,23 @@ function ProjectCard({ project = null }) {
         <DividerHorizontal margin='my-1' />
 
         {/* Action Buttons */}
-        <ContainerPill theme='dark' className='shadow-md shadow-bgr/50'>
+        <ContainerPill
+          theme='dark'
+          className='hidden sm:block shadow-md shadow-bgr/50'
+        >
+          <ActionButtons
+            buttonCTA={{ label: 'Details', href: path }}
+            buttonGithub={{ href: links.github }}
+            aria-label='Portfolio project action buttons'
+            className='pl-1'
+          />
+        </ContainerPill>
+
+        {/* Mobile */}
+        <ContainerPill
+          theme='darkSm'
+          className='sm:hidden shadow-md shadow-bgr/50'
+        >
           <ActionButtons
             buttonCTA={{ label: 'Details', href: path }}
             buttonGithub={{ href: links.github }}

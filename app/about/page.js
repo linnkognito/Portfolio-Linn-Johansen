@@ -10,14 +10,14 @@ function Page() {
     <PageWrapper aria-labelledby='about-heading'>
       <article className='flex gap-20 w-full p-section py-12 text-justify bg-bgr/50 backdrop-blur-sm border border-pri/30 shadow-md shadow-sdw/50 rounded-xs'>
         {/* Heading & Profile */}
-        <section className='flex-center flex-col gap-6 w-full max-w-2/3 h-full pl-10'>
+        <section className='flex-center flex-col gap-6 w-full h-full mx-auto max-md:mx-0 p-section md:pl-10'>
           <PageHeading id='about-heading' border={false}>
             About
           </PageHeading>
           <DividerHorizontal margin='m-0' />
 
           {/* <ProjectSection> */}
-          <div className='flex flex-col gap-4 py-4 px-10'>
+          <div className='flex items-center flex-col gap-4 py-4 px-10'>
             <p>
               Hi! I’m an aspiring web developer — or maybe more accurately, a
               design-dev hybrid — based in{' '}
@@ -46,14 +46,17 @@ function Page() {
             className='shadow-md shadow-bgr/50'
           >
             <ActionButtons
-              buttonCTA={{ label: 'Resume', href: '/portfolio/p' }}
+              buttonCTA={{
+                label: 'Resume',
+                href: '/files/resume-linnjohansen.pdf',
+              }}
               aria-label='Portfolio project action buttons'
               className='pl-1'
             />
           </ContainerPill>
         </section>
 
-        <section className='flex flex-col gap-6 w-full max-w-1/3 h-full my-4 mr-4 pl-10'>
+        <section className='hidden w-full max-w-1/3 h-full my-4 mr-4 pl-10'>
           <div
             role='img'
             className='relative w-[80%] h-[80%] aspect-square rounded-full overflow-hidden shadow-xl shadow-acc/20 '

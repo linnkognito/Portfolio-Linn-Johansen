@@ -1,5 +1,3 @@
-import DividerHorizontal from '@/_components/dividers/DividerHorizontal';
-import SectionHeading from '@/_components/text/SectionHeading';
 import {
   SocialLinkEmail,
   SocialLinkGitHub,
@@ -7,23 +5,20 @@ import {
   SocialLocation,
   SocialName,
 } from '@/_components/Socials';
+import PageHeading from '@/_components/text/PageHeading';
+import DividerHorizontal from '@/_components/dividers/DividerHorizontal';
 
 function Page() {
   return (
     <article
       aria-labelledby='contact-heading'
-      className='flex flex-col gap-4 sm:gap-8 sm:flex-row items-center w-full min-w-fit bg-bgr/50 backdrop-blur-sm border border-pri/30'
+      className='flex-center flex-col w-full min-w-fit p-section bg-bgr/50 backdrop-blur-sm border border-pri/30'
     >
-      {/* Title (Mid/Large screens) */}
-      <div className='flex-center w-full sm:w-1/4 min-w-fit h-1/5 sm:h-full p-div text-right bg-bgr/50 border-b sm:border-r border-pri/30'>
-        <SectionHeading tag='h1' id='contact-heading'>
-          Contact
-        </SectionHeading>
-      </div>
+      <PageHeading id='contact-heading'>Contact</PageHeading>
 
       {/* Contact info */}
-      <div className='w-full p-section'>
-        <div className='flex flex-col items-end gap-2 w-full max-w-[600px] min-h-fit max-h-1/2 p-div bg-bgr/50 border border-pri/50 rounded-xs'>
+      <div className='flex justify-center w-full max-w-full h-full p-section'>
+        <div className='flex flex-col items-end gap-2 w-full max-w-[600px] h-fit p-div bg-bgr/50 border border-pri/50 rounded-xs'>
           <div className='flex flex-col gap-2 w-full'>
             <SocialName />
             <SocialLocation />
