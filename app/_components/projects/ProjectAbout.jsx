@@ -7,6 +7,7 @@ import SectionHeading from '@/_components/text/SectionHeading';
 
 function ProjectAbout({ children, project }) {
   const { aboutImage: image, links } = project;
+  console.log(!image);
 
   const imageOrientations = {
     landscape: 'aspect-[16/9]',
@@ -17,7 +18,7 @@ function ProjectAbout({ children, project }) {
     <>
       <div
         className={`flex-center flex-col gap-4 w-full ${
-          image ? 'max-w-1/2' : ''
+          image ? 'max-w-1/2' : 'max-w-full'
         } p-div`}
       >
         <SectionHeading id='project-name' color='pop'>
@@ -28,14 +29,17 @@ function ProjectAbout({ children, project }) {
 
         <ProjectCardDescription
           width='w-full'
+          padding='py-2'
           className={`${!image ? 'max-w-[75%]' : ''}`}
         >
           {children}
         </ProjectCardDescription>
 
+        <DividerHorizontal margin='m-0' width='w-full max-w-4/5' />
+
         <ContainerPill
           theme='borderPopDark'
-          width='min-w-fit w-8/10'
+          width='min-w-fit w-8/10 max-w-[450px]'
           className='mt-2 ml-4'
         >
           <ActionButtons

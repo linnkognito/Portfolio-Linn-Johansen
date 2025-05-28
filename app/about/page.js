@@ -10,14 +10,14 @@ function Page() {
     <PageWrapper aria-labelledby='about-heading'>
       <article className='flex gap-20 w-full p-section py-12 text-justify bg-bgr/50 backdrop-blur-sm border border-pri/30 shadow-md shadow-sdw/50 rounded-xs'>
         {/* Heading & Profile */}
-        <section className='flex-center flex-col gap-6 w-full h-full mx-auto max-md:mx-0 p-section md:pl-10'>
+        <section className='flex-center flex-col gap-6 w-full max-w-6/10 h-full mx-auto max-md:mx-0 p-section md:pl-10'>
           <PageHeading id='about-heading' border={false}>
             About
           </PageHeading>
           <DividerHorizontal margin='m-0' />
 
           {/* <ProjectSection> */}
-          <div className='flex items-center flex-col gap-4 py-4 px-10'>
+          <div className='flex items-center flex-col gap-4 w-full py-4 px-10 text-justify'>
             <p>
               Hi! I’m an aspiring web developer — or maybe more accurately, a
               design-dev hybrid — based in{' '}
