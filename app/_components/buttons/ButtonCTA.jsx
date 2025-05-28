@@ -1,6 +1,7 @@
 function ButtonCTA({
   children,
   type = 'left',
+  color = 'base',
   ariaLabel = '',
   disabled = false,
   className = '',
@@ -12,6 +13,11 @@ function ButtonCTA({
     boat: 'rounded-bl-full',
   };
 
+  const colors = {
+    base: 'border-indigo-300 hover:border-pri hover:bg-pri/20',
+    pop: 'border-pop hover:border-pop hover:bg-pri/20',
+  };
+
   return (
     <button
       disabled={disabled}
@@ -19,12 +25,9 @@ function ButtonCTA({
       className={`
         px-8 
         border 
-        border-indigo-300 
         tracking-widest 
         font-medium 
         uppercase 
-        hover:border-pri 
-        hover:bg-pri/20 
         hover:font-bold 
         anim-prep 
         transition-colors 
@@ -33,6 +36,7 @@ function ButtonCTA({
         disabled:opacity-50 
         disabled:cursor-not-allowed
         ${styles[type]}
+        ${colors[color]}
         ${className}
       `}
       {...props}

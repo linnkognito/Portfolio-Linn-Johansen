@@ -32,7 +32,7 @@ function SectionHeading({
 
       <Tag
         id={id}
-        className={`text-heading font-semibold tracking-[0.75em] uppercase ${colors[color]} ${fontSize[size]} ${className}`}
+        className={`text-heading text-center font-semibold tracking-[0.75em] uppercase ${colors[color]} ${fontSize[size]} ${className}`}
         {...props}
       >
         {children}

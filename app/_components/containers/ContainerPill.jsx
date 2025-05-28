@@ -17,7 +17,7 @@ function ContainerPill({
 
   return (
     <div
-      className={`flex-center h-fit border rounded-full ${width}  ${styles[theme]} ${className}`}
+      className={`flex-center h-fit border rounded-full ${width} ${styles[theme]} ${className}`}
     >
       {children}
     </div>

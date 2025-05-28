@@ -1,5 +1,7 @@
+import UnderConstrucitionMessage from '@/_components/UnderConstrucitionMessage';
+
 function Page() {
-  return <div>The Wild Oasis website</div>;
+  return <UnderConstrucitionMessage />;
 }
 
 export default Page;

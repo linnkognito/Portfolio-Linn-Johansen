@@ -1,5 +1,7 @@
+import UnderConstrucitionMessage from '@/_components/UnderConstrucitionMessage';
+
 function Page() {
-  return <div>About this portfolio, coming soon</div>;
+  return <UnderConstrucitionMessage />;
 }
 
 export default Page;
