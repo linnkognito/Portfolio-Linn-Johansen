@@ -11,6 +11,8 @@ function ProjectSection({
     framedSmall:
       'flex-center gap-2 p-div bg-bgr/50 backdrop-blur-lg border border-pri/50 rounded-xs shadow-xl shadow-sdw/20',
     plain: 'flex gap-x-10 w-full px-10 my-10',
+    index:
+      'rounded-xs bg-bgr/50 backdrop-blur-lg border border-pri/50 rounded-xs shadow-xl shadow-sdw/20',
   };
 
   return (

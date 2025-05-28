@@ -17,7 +17,10 @@ function ActionButtons({
       role='group'
       {...props}
     >
-      <ButtonCTA ariaLabel='Go to live version' className='group'>
+      <ButtonCTA
+        ariaLabel='Go to live version'
+        className='group hover:shadow-[0_0_4px_#f8fafc]'
+      >
         <Link
           href={buttonCTA?.href || '/'}
           className='tshadow-txt group-hover:text-pop hover:tshadow-pop'
@@ -51,7 +54,7 @@ function ActionButtons({
           aria-label='Connect with me'
         >
           <ChatBubbleLeftEllipsisIcon
-            className='h-6 w-6 p-1 bg-pri/20 shadow-around rounded-full text-pri border border-indigo-300 group-hover:border-txt group-hover:bg-sec/30 group-hover:tshadow-txt group-hover:shadow-sm group-hover:shadow-txt anim-prep transition-colors'
+            className='h-6 w-6 p-1 bg-pri/20 shadow-around rounded-full text-txt border border-indigo-300 group-hover:border-pop group-hover:bg-sec/30 group-hover:tshadow-txt group-hover:shadow-[0_0_7px_#d9f99d] anim-prep transition-colors'
             aria-hidden='true'
           />
           Connect

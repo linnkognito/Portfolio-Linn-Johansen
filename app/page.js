@@ -1,35 +1,43 @@
 import ActionButtons from '@/_components/buttons/ActionButtons';
+import ContainerPill from './_components/containers/ContainerPill';
+import DividerHorizontal from './_components/dividers/DividerHorizontal';
+import H1 from './_components/text/H1';
+import ProjectSection from './_components/projects/ProjectSection';
 
 export default function Home() {
   return (
     <section
       aria-labelledby='index-heading'
-      className='relative w-full p-section backdrop-blur-xs'
+      className='relative w-full p-div sm:p-section bg-bgr/60 backdrop-blur-xs'
     >
-      <article className='pl-10 pt-[15vh]'>
-        <h1
-          id='index-heading'
-          className='flex flex-col gap-2 w-fit h-2/3 pt-1/3 uppercase'
-        >
-          <span className='w-fit mx-2 pl-2 pb-2 text-sm text-txt font-medium tracking-[1em] tshadow-txt border-b border-pri/30'>
-            Frontend Developer
-          </span>
-          <span className='w-full text-8xl text-pri font-semibold tshadow-glow tracking-widest'>
-            L.Johansen
-          </span>
-        </h1>
+      {/* Desktop */}
+      <article className='hidden sm:flex flex-col pl-10 pt-[15vh]'>
+        <H1 />
 
-        {/* Bio */}
-        <div className='w-full max-w-1/3 pl-4 pt-6 text-justify'>
+        <div className='flex w-full max-w-1/3 pl-6 pt-8 text-justify'>
           <ActionButtons
             theme='hero'
             buttonCTA={{ label: 'Discover', href: '/portfolio' }}
             aria-label='Hero section action buttons'
           />
         </div>
-
-        {/* <HeroCards /> */}
       </article>
+
+      {/* Mobile */}
+      <ProjectSection
+        theme='index'
+        className='sm:hidden flex-1 flex-center flex-col items-center gap-8 w-full h-full'
+      >
+        <H1 />
+
+        <ContainerPill theme='borderPopDarkSm' className='sm:hidden'>
+          <ActionButtons
+            theme='hero'
+            buttonCTA={{ label: 'Discover', href: '/portfolio' }}
+            aria-label='Hero section action buttons'
+          />
+        </ContainerPill>
+      </ProjectSection>
     </section>
   );
 }
