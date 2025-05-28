@@ -4,12 +4,12 @@ function PageWrapper({ children, theme = 'base', className = '', ...props }) {
     dark: 'bg-bgr/5 backdrop-blur-md',
   };
   return (
-    <section
+    <div
       className={`w-full min-h-fit p-section rounded-xs ${themes[theme]} ${className}`}
       {...props}
     >
       {children}
-    </section>
+    </div>
   );
 }
 

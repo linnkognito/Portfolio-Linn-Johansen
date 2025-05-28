@@ -1,8 +1,7 @@
+import ContainerPill from '@/_components/containers/ContainerPill';
+import H1 from '@/_components/text/H1';
+import ProjectSection from '@/_components/projects/ProjectSection';
 import ActionButtons from '@/_components/buttons/ActionButtons';
-import ContainerPill from './_components/containers/ContainerPill';
-import DividerHorizontal from './_components/dividers/DividerHorizontal';
-import H1 from './_components/text/H1';
-import ProjectSection from './_components/projects/ProjectSection';
 
 export default function Home() {
   return (

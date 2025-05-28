@@ -18,7 +18,7 @@ function ActionButtons({
       {...props}
     >
       <ButtonCTA
-        ariaLabel='Go to live version'
+        ariaLabel={buttonCTA.ariaLabel || 'Go to live version'}
         className='group hover:shadow-[0_0_4px_#f8fafc]'
       >
         <Link
@@ -37,7 +37,7 @@ function ActionButtons({
           target='_blank'
           rel='noopener noreferrer'
           className='group py-1 tracking-widest uppercase flex-center gap-2 tshadow-txt font-medium hover:font-bold focus-ring'
-          aria-label='Link to my GitHub'
+          aria-label='Link to Linn Johansen’s GitHub profile'
         >
           <Github
             className='h-6 w-6 p-1 bg-pri/20 shadow-around rounded-full text-pri border border-indigo-300 group-hover:border-pri group-hover:bg-sec/30 anim-prep transition-colors'
@@ -51,7 +51,7 @@ function ActionButtons({
         <Link
           href='/contact'
           className='group py-1 tracking-widest uppercase flex-center gap-2 tshadow-txt font-medium hover:font-bold focus-ring'
-          aria-label='Connect with me'
+          aria-label='Link to Contact page'
         >
           <ChatBubbleLeftEllipsisIcon
             className='h-6 w-6 p-1 bg-pri/20 shadow-around rounded-full text-txt border border-indigo-300 group-hover:border-pop group-hover:bg-sec/30 group-hover:tshadow-txt group-hover:shadow-[0_0_7px_#d9f99d] anim-prep transition-colors'
