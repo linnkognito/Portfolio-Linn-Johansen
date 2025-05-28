@@ -17,6 +17,9 @@
     --color-ice: #bdbfc3;
     --color-dove: #888d9e;
     --color-steel: #16161e;
+
+    --breakpoint-hero-md: 980px;
+    --breakpoint-hero-sm: 820px;
   }
   html {
     color: var(--color-txt);

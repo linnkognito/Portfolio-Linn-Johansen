@@ -9,7 +9,7 @@ function H1() {
           Frontend Developer
         </span>
 
-        <span className='hidden sm:block w-full text-8xl text-pri font-semibold tshadow-glow tracking-widest'>
+        <span className='w-full text-6xl hero-sm:text-[5rem] hero-md:text-8xl text-pri font-semibold tshadow-glow tracking-widest'>
           L.Johansen
         </span>
       </h1>
