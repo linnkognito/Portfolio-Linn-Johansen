@@ -9,7 +9,6 @@ import {
   Tailwind,
   Vite,
 } from '@react-symbols/icons';
-import Image from 'next/image';
 import ContainerPill from '@/_components/containers/ContainerPill';
 import TechIcon from '@/_components/technologies/TechIcon';
 import TechIcons from '@/_components/technologies/TechIcons';
@@ -34,20 +33,20 @@ function ProjectHero({ project = null }) {
 
   return (
     <>
-      <ContainerPill className='mt-10'>
-        <TechIcons direction='col'>
+      <ImageFrame image={image} className='order-1 md:order-2' />
+
+      <ContainerPill className='order-2 md:order-1 max-md:mx-auto md:ml-0 md:mt-10'>
+        <TechIcons className='flex-row md:flex-col'>
           {technologies?.map((tech) => (
             <TechIcon
               key={tech.title}
               title={tech.title}
-              width='w-8'
+              width='w-6 md:w-8'
               icon={iconComponents[tech.icon]}
             />
           ))}
         </TechIcons>
       </ContainerPill>
-
-      <ImageFrame image={image} />
     </>
   );
 }

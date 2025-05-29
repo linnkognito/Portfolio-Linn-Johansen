@@ -1,6 +1,11 @@
 import Image from 'next/image';
 
-function ImageFrame({ image, theme = 'base', aspect = 'aspect-[16/9]' }) {
+function ImageFrame({
+  image,
+  theme = 'base',
+  aspect = 'aspect-[16/9]',
+  className = '',
+}) {
   if (!image) return null;
 
   const styles = {
@@ -10,7 +15,7 @@ function ImageFrame({ image, theme = 'base', aspect = 'aspect-[16/9]' }) {
   };
 
   return (
-    <div className={styles[theme]}>
+    <div className={`${styles[theme]} ${className}`}>
       <div className={`relative rounded-xs shadow-subtle-pri ${aspect}`}>
         <Image
           src={image.src}

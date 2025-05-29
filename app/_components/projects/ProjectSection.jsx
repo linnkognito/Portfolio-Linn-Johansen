@@ -5,7 +5,7 @@ function ProjectSection({
   ...props
 }) {
   const styles = {
-    hero: 'flex gap-x-6 w-full max-w-[90%] mb-10 pl-8 pr-4',
+    hero: 'flex flex-col md:flex-row gap-2 md:gap-6 w-full max-w-[90%] md:mb-10 pl-8 pr-4',
     framed:
       'flex-center gap-10 p-div rounded-xs bg-bgr/50 backdrop-blur-lg border border-pri/50 rounded-xs shadow-xl shadow-sdw/20',
     framedSmall:
