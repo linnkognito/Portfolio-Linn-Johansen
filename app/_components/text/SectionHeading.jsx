@@ -21,6 +21,7 @@ function SectionHeading({
     sm: 'text-base',
     md: 'text-md',
     lg: 'text-lg',
+    lgDynamic: 'text-lg sm:text-xl md:text-2xl',
     xl: 'text-xl',
     xlDynamic: 'text-md lg:text-lg xl:text-xl',
     '2xl': 'text-2xl',

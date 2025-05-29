@@ -7,7 +7,6 @@ import SectionHeading from '@/_components/text/SectionHeading';
 
 function ProjectAbout({ children, project }) {
   const { aboutImage: image, links } = project;
-  console.log(!image);
 
   const imageOrientations = {
     landscape: 'aspect-[16/9]',
@@ -19,9 +18,9 @@ function ProjectAbout({ children, project }) {
       <div
         className={`flex-center flex-col gap-4 w-full ${
           image ? 'max-w-1/2' : 'max-w-full'
-        } p-div`}
+        }`}
       >
-        <SectionHeading id='project-name' color='pop'>
+        <SectionHeading id='project-name' color='pop' size='lgDynamic'>
           About
         </SectionHeading>
 

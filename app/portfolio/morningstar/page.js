@@ -29,7 +29,7 @@ function Page() {
         </ProjectSection>
 
         {/* About */}
-        <ProjectSection theme='framed' className='w-8/10'>
+        <ProjectSection theme='framed' className='w-9/10 w-8/10'>
           <ProjectAbout project={project}>
             <MorningstarAbout />
           </ProjectAbout>
@@ -44,7 +44,7 @@ function Page() {
         </ProjectSection>
 
         {/* UI/UX */}
-        <ProjectSection theme='framed' className='w-8/10'>
+        <ProjectSection theme='framed' className='w-9/10 md:w-8/10'>
           <ProjectUiUx project={project} UiDemo={<MorningstarUiDemo />}>
             <MorningstarUiUx />
           </ProjectUiUx>
