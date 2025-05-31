@@ -10,7 +10,7 @@ function InfoCard({
 }) {
   return (
     <div
-      className={`flex flex-col flex-1 gap-2 min-h-fit xl:min-h-[400px] p-div bg-bgr/80 rounded-xs border border-pri/40 shadow-lg shadow-sdw/40 ${width}`}
+      className={`flex flex-col flex-1 gap-2 min-h-fit xl:min-h-[400px] p-div bg-bgr/80 rounded-[1.8rem] border border-pri/40 shadow-lg shadow-sdw/40 ${width}`}
     >
       <SectionHeading
         tag='h3'
@@ -23,7 +23,7 @@ function InfoCard({
 
       <DividerHorizontal />
 
-      <div className='flex-1 py-2 px-4'>{children}</div>
+      <div className='flex-1 flex flex-col gap-2 py-2 px-4'>{children}</div>
 
       <DividerHorizontal />
 

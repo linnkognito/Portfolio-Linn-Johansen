@@ -22,14 +22,14 @@ function Page() {
     >
       <PageHeading id='portfolio-heading'>{project.title}</PageHeading>
 
-      <article className='flex flex-col items-center gap-10 p-section'>
+      <article className='flex flex-col items-center gap-10 p-article'>
         {/* Tech + Main image */}
         <ProjectSection theme='hero'>
           <ProjectHero project={project} />
         </ProjectSection>
 
         {/* About */}
-        <ProjectSection theme='framed' className='w-9/10 w-8/10'>
+        <ProjectSection theme='framed' className='w-9/10 md:w-8/10'>
           <ProjectAbout project={project}>
             <MorningstarAbout />
           </ProjectAbout>

@@ -17,17 +17,14 @@ function ActionButtons({
       role='group'
       {...props}
     >
-      <ButtonCTA
-        ariaLabel={buttonCTA.ariaLabel || 'Go to live version'}
-        className='group hover:shadow-[0_0_4px_#f8fafc]'
-      >
-        <Link
-          href={buttonCTA?.href || '/'}
-          className='tshadow-txt group-hover:text-pop hover:tshadow-pop'
+      <Link href={buttonCTA?.href || '/'} className='group'>
+        <ButtonCTA
+          ariaLabel={buttonCTA.ariaLabel || 'Go to live version'}
+          className='tshadow-txt group-hover:text-pop hover:tshadow-pop group-hover:shadow-[0_0_4px_#f8fafc]'
         >
           {buttonCTA?.label || 'More'}
-        </Link>
-      </ButtonCTA>
+        </ButtonCTA>
+      </Link>
 
       <Separator />
 

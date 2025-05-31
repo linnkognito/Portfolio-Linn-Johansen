@@ -5,25 +5,29 @@ import {
   ReactRouterLink,
   ReduxToolkitLink,
 } from '@/_components/technologies/TechTextLinks';
+import { Bold } from '@/_components/text/TextStyles';
 
 function MorningstarFeatures() {
   return (
     <>
       <InfoCard title='Dynamic Routing'>
         <p className='text-justify'>
-          Built with <ReactRouterLink />, the app uses nested routes and dynamic
-          URL parameters to handle product categories and item detail pages -
-          just like a real online store. This prevents full page reloads in
-          order to create a seamless user experience.
+          Built with <ReactRouterLink />, the app uses{' '}
+          <Bold>nested routes</Bold> and <Bold>dynamic URL parameters</Bold> to
+          handle product categories and item detail pages.
+        </p>
+        <p>
+          This <Bold>prevents full page reloads</Bold>, in order to create a
+          seamless user experience.
         </p>
       </InfoCard>
       <InfoCard title='State Management'>
         <p className='text-justify'>
-          I knew I wanted to keep product and cart logic centralized. For this I
-          used <ReduxToolkitLink /> to manage global state for products, the
-          cart, filters, and UI controls. Async logic (like API fetching) is
-          handled with thunks.
+          I knew I wanted to keep product and cart logic centralized with global
+          state. I used <ReduxToolkitLink /> to manage global state for the
+          products, cart, filters and UI controls.
         </p>
+        <p>Async logic (like API fetching) is handled with thunks.</p>
       </InfoCard>
       <InfoCard title='Custom API'>
         <p className='text-justify'>

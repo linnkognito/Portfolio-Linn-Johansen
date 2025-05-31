@@ -37,7 +37,9 @@
   .flex-center {
     @apply flex justify-center items-center;
   }
-
+  .p-article {
+    @apply px-4 pt-7 pb-3 lg:px-10 lg:pb-6;
+  }
   .p-section {
     @apply px-4 pt-10 pb-3 lg:px-10 lg:pb-6;
   }

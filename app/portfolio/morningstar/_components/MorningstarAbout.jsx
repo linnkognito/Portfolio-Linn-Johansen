@@ -8,14 +8,12 @@ function MorningstarAbout() {
   return (
     <>
       <p>
-        Morningstar is a fully responsive{' '}
-        <Bold>e-commerce web application</Bold>
-        designed and developed by me to practice{' '}
-        <Bold>fullstack development</Bold> and hone my <Bold>UI design</Bold>{' '}
-        skills with a retail focus.
+        Morningstar is a fully responsive <Bold>e-commerce web app</Bold> built
+        to sharpen my skills in <Bold>UI design</Bold> and{' '}
+        <Bold>fullstack development</Bold>.
       </p>
       <p>
-        The app showcases a fake online clothing store and pulls product data
+        The app showcases a fake online clothing store, and pulls product data
         from a custom-built{' '}
         <Bold>
           <ExpressLink /> + <MongoDBLink /> API
@@ -24,9 +22,9 @@ function MorningstarAbout() {
       </p>
       <p>
         My goal was to simulate something akin to a <Bold>real-world</Bold> dev
-        environment, from building an API and handling dynamic product{' '}
-        <Bold>filtering</Bold> to styling modern,{' '}
-        <Bold>responsive layouts</Bold> that feel like an actual storefront.
+        environment: from building an API and handling{' '}
+        <Bold>dynamic product filtering</Bold>, to crafting a layout that is
+        both expressive and <Bold>responsive</Bold>.
       </p>
     </>
   );

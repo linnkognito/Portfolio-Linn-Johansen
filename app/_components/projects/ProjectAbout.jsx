@@ -38,13 +38,13 @@ function ProjectAbout({ children, project }) {
 
         <ContainerPill
           theme='borderPopDark'
-          width='min-w-fit w-8/10 max-w-[450px]'
-          className='mt-2 ml-4'
+          width='min-w-fit max-w-[450px]'
+          className='mt-2 mx-auto max-md:text-sm'
         >
           <ActionButtons
             buttonCTA={{ label: 'Live', href: links.live }}
             buttonGithub={{ href: links.github }}
-            className='mx-auto pl-4'
+            className='mx-auto px-4'
             aria-label='Portfolio project action buttons'
           />
         </ContainerPill>
