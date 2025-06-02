@@ -5,7 +5,7 @@ function PageWrapper({ children, theme = 'base', className = '', ...props }) {
   };
   return (
     <div
-      className={`w-full min-h-fit p-section rounded-xs ${themes[theme]} ${className}`}
+      className={`flex-center flex-col w-full min-h-fit p-section rounded-xs ${themes[theme]} ${className}`}
       {...props}
     >
       {children}

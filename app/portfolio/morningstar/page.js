@@ -15,11 +15,7 @@ import PageHeading from '@/_components/text/PageHeading';
 
 function Page() {
   return (
-    <PageWrapper
-      theme='dark'
-      aria-labelledby='portfolio-heading'
-      className='flex-center flex-col'
-    >
+    <PageWrapper theme='dark' aria-labelledby='portfolio-heading'>
       <PageHeading id='portfolio-heading'>{project.title}</PageHeading>
 
       <article className='flex flex-col items-center gap-10 p-article'>

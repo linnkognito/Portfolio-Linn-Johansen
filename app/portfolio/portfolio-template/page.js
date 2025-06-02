@@ -15,17 +15,21 @@ import PortfolioTemplateFeatures from './_components/PortfolioTemplateFeatures';
 
 function Page() {
   return (
-    <PageWrapper theme='dark' aria-labelledby='portfolio-heading'>
+    <PageWrapper
+      theme='dark'
+      aria-labelledby='portfolio-heading'
+      className='flex-center flex-col'
+    >
       <PageHeading id='portfolio-heading'>{project.title}</PageHeading>
 
-      <article className='flex flex-col items-center gap-10 p-section'>
+      <article className='flex flex-col items-center gap-10 p-article'>
         {/* Tech + Main image */}
         <ProjectSection theme='hero'>
           <ProjectHero project={project} />
         </ProjectSection>
 
         {/* About */}
-        <ProjectSection theme='framed'>
+        <ProjectSection theme='framed' className='w-9/10 md:w-8/10'>
           <ProjectAbout project={project}>
             <PortfolioTemplateAbout />
           </ProjectAbout>
@@ -40,7 +44,7 @@ function Page() {
         </ProjectSection>
 
         {/* UI/UX */}
-        <ProjectSection theme='framed'>
+        <ProjectSection theme='framed' className='w-9/10 md:w-8/10'>
           <ProjectUiUx project={project} UiDemo={<PortfolioTemplateUiDemo />}>
             <PortfolioTemplateUiUx />
           </ProjectUiUx>

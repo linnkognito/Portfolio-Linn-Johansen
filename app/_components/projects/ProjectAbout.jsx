@@ -16,20 +16,23 @@ function ProjectAbout({ children, project }) {
   return (
     <>
       <div
-        className={`flex-center flex-col gap-4 w-full ${
-          image ? 'max-w-1/2' : 'max-w-full'
+        className={`flex-center flex-col gap-4 w-full max-w-full ${
+          image ? 'sm:max-w-1/2' : ''
         }`}
       >
         <SectionHeading id='project-name' color='pop' size='lgDynamic'>
           About
         </SectionHeading>
 
-        <DividerHorizontal margin='m-0' width='w-full max-w-4/5' />
+        <DividerHorizontal
+          margin='m-0'
+          width='w-full max-w-9/10 sm:max-w-4/5'
+        />
 
         <ProjectCardDescription
-          width='w-full'
+          width='w-full max-w-4/5'
           padding='py-2'
-          className={`${!image ? 'max-w-[75%]' : ''}`}
+          className={`${!image ? 'sm:max-w-[75%]' : ''}`}
         >
           {children}
         </ProjectCardDescription>
@@ -52,8 +55,10 @@ function ProjectAbout({ children, project }) {
 
       {image && (
         <div
-          className={`relative w-full max-w-1/2 max-h-[450px]  shadow-subtle-sdw rounded-xs ${
-            imageOrientations[image.orientation || 'landscape']
+          className={`max-sm:hidden relative w-full sm:max-w-1/2 max-h-[450px] shadow-subtle-sdw rounded-xs ${
+            image.orientation
+              ? imageOrientations[image.orientation]
+              : imageOrientations.landscape
           }`}
         >
           <Image

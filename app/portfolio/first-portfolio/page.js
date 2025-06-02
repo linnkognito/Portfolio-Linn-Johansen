@@ -10,17 +10,21 @@ import FirstPortfolioAbout from './_components/FirstPortfolioAbout';
 
 function Page() {
   return (
-    <PageWrapper theme='dark' aria-labelledby='portfolio-heading'>
+    <PageWrapper
+      theme='dark'
+      aria-labelledby='portfolio-heading'
+      className='flex-center flex-col'
+    >
       <PageHeading id='portfolio-heading'>{project.title}</PageHeading>
 
-      <article className='flex flex-col items-center gap-10 p-section'>
+      <article className='flex flex-col items-center gap-10 p-article'>
         {/* Tech + Main image */}
         <ProjectSection theme='hero'>
           <ProjectHero project={project} />
         </ProjectSection>
 
         {/* About */}
-        <ProjectSection theme='framed' className='w-8/10'>
+        <ProjectSection theme='framed' className='w-9/10 md:w-8/10'>
           <ProjectAbout project={project}>
             <FirstPortfolioAbout />
           </ProjectAbout>

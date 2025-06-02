@@ -10,7 +10,7 @@ function InfoCard({
 }) {
   return (
     <div
-      className={`flex flex-col flex-1 gap-2 min-h-fit xl:min-h-[400px] p-div bg-bgr/80 rounded-[1.8rem] border border-pri/40 shadow-lg shadow-sdw/40 ${width}`}
+      className={`flex flex-col flex-1 max-sm:max-w-[350px] gap-2 min-h-fit xl:min-h-[400px] p-div bg-bgr/80 rounded-[1.8rem] border border-pri/40 shadow-lg shadow-sdw/40 ${width}`}
     >
       <SectionHeading
         tag='h3'

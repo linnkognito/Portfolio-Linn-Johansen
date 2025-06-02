@@ -33,7 +33,9 @@ function ProjectHero({ project = null }) {
 
   return (
     <>
-      <ImageFrame image={image} className='order-1 md:order-2' />
+      <div className='w-full px-4'>
+        <ImageFrame image={image} className='order-1 md:order-2' />
+      </div>
 
       <ContainerPill className='order-2 md:order-1 max-md:mx-auto md:ml-0 md:mt-10'>
         <TechIcons className='flex-row md:flex-col'>

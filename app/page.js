@@ -2,7 +2,6 @@ import H1 from '@/_components/text/H1';
 import ProjectSection from '@/_components/projects/ProjectSection';
 import ActionButtons from '@/_components/buttons/ActionButtons';
 import ButtonCTA from './_components/buttons/ButtonCTA';
-import ButtonConnect from './_components/buttons/ButtonConnect';
 import Link from 'next/link';
 
 export default function Home() {
