@@ -7,6 +7,8 @@ import ActionButtons from '@/_components/buttons/ActionButtons';
 import ContainerPill from '@/_components/containers/ContainerPill';
 import ProjectLabel from './ProjectLabel';
 import { motion } from 'framer-motion';
+import ButtonCTA from '../buttons/ButtonCTA';
+import Link from 'next/link';
 
 function ProjectCard({ project = null }) {
   if (!project) return null;
@@ -41,14 +43,14 @@ function ProjectCard({ project = null }) {
       </div>
 
       {/* Project Details Preview */}
-      <div className='relative flex flex-col gap-4 w-full lg:max-w-1/2 p-div'>
+      <div className='relative flex flex-col gap-2 sm:gap-4 w-full lg:max-w-1/2 sm:p-div'>
         {/* Label */}
         <ProjectLabel
           isCourseWork={isCourseWork}
           isUnderConstruction={isUnderConstruction}
         />
         <h2
-          className='pl-2 text-2xl text-heading text-pop font-semibold tracking-[0.2em] uppercase'
+          className='mt-1 sm:mt-2 pl-2 text-base sm:text-2xl text-heading text-pop font-semibold tracking-[0.3em] sm:tracking-[0.2em] uppercase'
           id='project-name'
         >
           {title}
@@ -77,17 +79,11 @@ function ProjectCard({ project = null }) {
         </ContainerPill>
 
         {/* Mobile */}
-        <ContainerPill
-          theme='darkSm'
-          className='sm:hidden shadow-md shadow-bgr/50'
-        >
-          <ActionButtons
-            buttonCTA={{ label: 'Details', href: path }}
-            buttonGithub={{ href: links.github }}
-            aria-label='Portfolio project action buttons'
-            className='pl-1'
-          />
-        </ContainerPill>
+        <Link href={path} className='flex-center sm:hidden w-full px-4'>
+          <ButtonCTA type='right' color='pop' className='w-full max-w-9/10'>
+            Details
+          </ButtonCTA>
+        </Link>
       </div>
     </motion.div>
   );

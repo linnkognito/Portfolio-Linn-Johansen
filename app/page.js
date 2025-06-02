@@ -1,7 +1,9 @@
-import ContainerPill from '@/_components/containers/ContainerPill';
 import H1 from '@/_components/text/H1';
 import ProjectSection from '@/_components/projects/ProjectSection';
 import ActionButtons from '@/_components/buttons/ActionButtons';
+import ButtonCTA from './_components/buttons/ButtonCTA';
+import ButtonConnect from './_components/buttons/ButtonConnect';
+import Link from 'next/link';
 
 export default function Home() {
   return (
@@ -25,17 +27,15 @@ export default function Home() {
       {/* Mobile */}
       <ProjectSection
         theme='index'
-        className='sm:hidden flex-1 flex-center flex-col items-center gap-8 w-full h-full'
+        className='sm:hidden flex-1 flex-center flex-col items-center gap-8 w-full h-full overflow-hidden'
       >
         <H1 />
 
-        <ContainerPill theme='borderPopDarkSm' className='sm:hidden'>
-          <ActionButtons
-            theme='hero'
-            buttonCTA={{ label: 'Discover', href: '/portfolio' }}
-            aria-label='Hero section action buttons'
-          />
-        </ContainerPill>
+        <Link href='/portfolio'>
+          <ButtonCTA type='right' color='pop'>
+            Discover
+          </ButtonCTA>
+        </Link>
       </ProjectSection>
     </section>
   );

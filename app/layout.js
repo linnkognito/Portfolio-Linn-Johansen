@@ -35,7 +35,7 @@ function RootLayout({ children }) {
       dir='ltr'
       className={`${jura.variable} ${orbitron.variable}`}
     >
-      <body className='relative aspect-auto h-screen w-full max-w-screen overflow-x-hidden px-6 pb-4'>
+      <body className='relative aspect-auto h-screen w-full max-w-screen overflow-x-hidden sm:px-6 pb-4'>
         <div
           role='img'
           className='fixed inset-0 flex items-center justify-end z-[-1]'
@@ -56,7 +56,7 @@ function RootLayout({ children }) {
 
           <main
             id='main-content'
-            className='flex w-full max-w-site h-2/3 min-h-fit mx-auto border border-pri/50 rounded-xs'
+            className='flex w-full max-w-site h-2/3 min-h-fit mx-auto sm:border sm:border-pri/50 sm:rounded-xs'
           >
             {children}
           </main>
