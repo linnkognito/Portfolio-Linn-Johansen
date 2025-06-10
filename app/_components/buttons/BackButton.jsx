@@ -8,12 +8,12 @@ const BackButton = () => {
 
   return (
     <ButtonCTA
+      variant='right'
       color='pop'
       ariaLabel='Go back'
-      className='flex-center gap-2 w-1/3 min-w-fit text-base md:text-lg font-semibold hover:shadow-[0_0_4px_#d9f99d]'
+      className='flex-center gap-2 w-1/2 min-w-fit py-[1px] font-semibold hover:shadow-[0_0_4px_#d9f99d]'
       onClick={() => router.back()}
     >
-      <ArrowLongLeftIcon className='h-6' />
       Go back
     </ButtonCTA>
   );

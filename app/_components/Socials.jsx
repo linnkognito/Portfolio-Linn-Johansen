@@ -74,7 +74,12 @@ export function SocialLinkEmail() {
     >
       <AtSymbolIcon className='w-5 text-pri group-hover:text-txt' />
       <Separator />
-      <TextLink theme='txt'>linn.es.johansen@gmail.com</TextLink>
+      <button
+        type='button'
+        className='font-bold focus-ring text-txt hover:[text-shadow:0_0_7px_var(--color-txt)] cursor-pointer'
+      >
+        linn.es.johansen@gmail.com
+      </button>
     </ContainerPill>
   );
 }

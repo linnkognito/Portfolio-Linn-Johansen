@@ -28,7 +28,7 @@ function InfoCard({
       <DividerHorizontal />
 
       {button && (
-        <ButtonCTA type='right' className='mt-auto text-pop'>
+        <ButtonCTA variant='right' className='mt-auto text-pop'>
           {button}
         </ButtonCTA>
       )}

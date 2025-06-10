@@ -31,7 +31,7 @@ export default function Home() {
         <H1 />
 
         <Link href='/portfolio'>
-          <ButtonCTA type='right' color='pop'>
+          <ButtonCTA variant='right' color='pop'>
             Discover
           </ButtonCTA>
         </Link>

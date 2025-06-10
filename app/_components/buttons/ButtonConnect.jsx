@@ -4,7 +4,7 @@ import Link from 'next/link';
 function ButtonConnect() {
   return (
     <Link
-      href='/contact'
+      href='/connect'
       className='group py-1 tracking-widest uppercase flex-center gap-2 tshadow-txt font-medium hover:font-bold focus-ring'
       aria-label='Link to Contact page'
     >

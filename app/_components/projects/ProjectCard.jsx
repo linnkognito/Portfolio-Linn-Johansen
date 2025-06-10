@@ -80,7 +80,7 @@ function ProjectCard({ project = null }) {
 
         {/* Mobile */}
         <Link href={path} className='flex-center sm:hidden w-full px-4'>
-          <ButtonCTA type='right' color='pop' className='w-full max-w-9/10'>
+          <ButtonCTA variant='right' color='pop' className='w-full max-w-9/10'>
             Details
           </ButtonCTA>
         </Link>

@@ -1,6 +1,6 @@
 function ButtonCTA({
   children,
-  type = 'left',
+  variant = 'left',
   color = 'base',
   ariaLabel = '',
   disabled = false,
@@ -35,7 +35,7 @@ function ButtonCTA({
         focus-ring
         disabled:opacity-50 
         disabled:cursor-not-allowed
-        ${styles[type]}
+        ${styles[variant]}
         ${colors[color]}
         ${className}
       `}

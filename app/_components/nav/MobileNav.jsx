@@ -1,7 +1,8 @@
 'use client';
 
-import { useEffect, useRef, useState } from 'react';
+import { useRef, useState } from 'react';
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline';
+import useDismiss from '@/hooks/useDismiss';
 import NavLink from './NavLink';
 
 function MobileNav({ pathname, links }) {
@@ -10,29 +11,7 @@ function MobileNav({ pathname, links }) {
 
   const toggleMenu = () => setIsOpen((prev) => !prev);
 
-  useEffect(() => {
-    function handleClickOutside(e) {
-      if (dropdownRef.current && !dropdownRef.current.contains(e.target)) {
-        setIsOpen(false);
-      }
-    }
-
-    function handleEscape(e) {
-      if (e.key === 'Escape') {
-        setIsOpen(false);
-      }
-    }
-
-    if (isOpen) {
-      document.addEventListener('mousedown', handleClickOutside);
-      document.addEventListener('keydown', handleEscape);
-    }
-
-    return () => {
-      document.removeEventListener('mousedown', handleClickOutside);
-      document.removeEventListener('keydown', handleEscape);
-    };
-  }, [isOpen]);
+  useDismiss(dropdownRef, isOpen, setIsOpen);
 
   return (
     <div ref={dropdownRef} className='relative md:hidden'>

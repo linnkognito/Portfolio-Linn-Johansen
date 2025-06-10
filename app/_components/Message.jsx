@@ -1,15 +1,18 @@
 import PageWrapper from '@/_components/containers/PageWrapper';
-import PageHeading from '@/_components/text/PageHeading';
 import DividerHorizontal from '@/_components/dividers/DividerHorizontal';
-import ContainerPill from '@/_components/containers/ContainerPill';
 import BackButton from './buttons/BackButton';
-import { ArrowLongLeftIcon } from '@heroicons/react/24/outline';
 import SectionHeading from './text/SectionHeading';
 
-function Message({ children, title }) {
+function Message({ children, title, wrapper = true }) {
   return (
     <PageWrapper aria-labelledby='message-heading'>
-      <article className='flex-center flex-col w-full p-section py-12 text-justify bg-bgr/85 backdrop-blur-sm border border-pri/30 shadow-md shadow-sdw/50 rounded-xs'>
+      <article
+        className={`flex-center flex-col w-full max-sm:h-full text-justify ${
+          wrapper
+            ? 'p-section py-12 bg-bgr/85 backdrop-blur-sm border border-pri/30 shadow-md shadow-sdw/50 rounded-xs'
+            : ''
+        }`}
+      >
         <section className='flex-center flex-col gap-6 w-full max-w-8/10'>
           <SectionHeading
             id='message-heading'
