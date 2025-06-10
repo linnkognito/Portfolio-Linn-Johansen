@@ -10,12 +10,16 @@ function ButtonCTA({
   const styles = {
     left: 'rounded-bl-xl rounded-tr-xl',
     right: 'rounded-tl-full rounded-br-full',
+    flatLeft: 'rounded-tr-full',
+    flatRight: 'rounded-tl-full',
+    pill: 'rounded-full',
     boat: 'rounded-bl-full',
   };
 
   const colors = {
     base: 'border-indigo-300 hover:border-pri hover:bg-pri/20',
     pop: 'border-pop hover:border-pop hover:bg-pri/20',
+    popHover: 'border-indigo-300 hover:border-pop hover:bg-pri/20',
   };
 
   return (
@@ -27,6 +31,7 @@ function ButtonCTA({
         border 
         tracking-widest 
         font-medium 
+        text-center 
         uppercase 
         hover:font-bold 
         anim-prep 

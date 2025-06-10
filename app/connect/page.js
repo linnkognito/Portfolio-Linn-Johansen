@@ -7,7 +7,7 @@ function Page() {
       aria-labelledby='contact-heading'
       className='flex-center flex-col w-full min-w-fit p-section bg-bgr/50 backdrop-blur-sm border border-pri/30'
     >
-      <PageHeading id='contact-heading'>Contact</PageHeading>
+      <PageHeading id='contact-heading'>Connect</PageHeading>
 
       <ContactInfo />
     </article>

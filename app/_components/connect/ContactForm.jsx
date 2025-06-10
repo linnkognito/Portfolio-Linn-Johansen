@@ -3,8 +3,10 @@
 import ButtonCTA from '../buttons/ButtonCTA';
 import ContentWrapper from '../containers/ContentWrapper';
 import FormRow from '../ui/FormRow';
+import SectionHeading from '../text/SectionHeading';
+import DividerHorizontal from '../dividers/DividerHorizontal';
 
-function ContactForm() {
+function ContactForm({ setShowEmailForm }) {
   return (
     <ContentWrapper className='flex flex-col gap-4 w-full max-w-[600px] p-div'>
       <form
@@ -12,6 +14,9 @@ function ContactForm() {
         method='POST'
         className='flex flex-col items-center justify-center gap-4 w-full'
       >
+        <SectionHeading className='mt-4'>Contact me</SectionHeading>
+        <DividerHorizontal />
+
         <FormRow
           type='text'
           label='Subject'
@@ -39,15 +44,24 @@ function ContactForm() {
           required
         />
 
-        <input
-          type='hidden'
-          name='_next'
-          value='https://www.linnjohansen.com/connect/success'
-        />
-
-        <ButtonCTA type='submit' variant='right' className='w-1/2 mt-2'>
-          Send
-        </ButtonCTA>
+        <div className='flex justify-center gap-3 w-full max-w-8/10'>
+          <ButtonCTA
+            type='button'
+            variant='pill'
+            className='min-w-[134px] w-2/5 mt-2'
+            onClick={() => setShowEmailForm(false)}
+          >
+            Cancel
+          </ButtonCTA>
+          <ButtonCTA
+            type='submit'
+            variant='pill'
+            color='popHover'
+            className='min-w-[134px] w-2/5 mt-2 hover:border-pop'
+          >
+            Send
+          </ButtonCTA>
+        </div>
 
         {/* Form Metadata */}
         <input
@@ -60,6 +74,7 @@ function ContactForm() {
           name='_next'
           value='http://localhost:3000/connect/success'
         />
+        <input type='hidden' name='_captcha' value='false' />
       </form>
     </ContentWrapper>
   );

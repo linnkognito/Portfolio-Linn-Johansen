@@ -1,11 +1,7 @@
-import Message from '@/_components/Message';
+import SuccessMessage from '@/_components/connect/SuccessMessage';
 
 function Page() {
-  return (
-    <Message title='Thank you!'>
-      <p>I will get back to you as soon as possible.</p>
-    </Message>
-  );
+  return <SuccessMessage />;
 }
 
 export default Page;
