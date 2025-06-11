@@ -41,10 +41,7 @@
     @apply px-4 pt-6 pb-3 lg:px-10 lg:pb-6;
   }
   .p-section {
-    @apply px-4 pt-6 pb-3 sm:px-4 sm:pt-10 sm:pb-3 lg:px-10 lg:pb-6;
-  }
-  .p-subsection {
-    @apply p-20;
+    @apply px-4 py-6 sm:px-4 sm:py-10 lg:px-10 lg:pb-6;
   }
   .p-div {
     @apply px-8 py-6;

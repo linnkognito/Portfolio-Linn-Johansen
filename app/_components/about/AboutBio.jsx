@@ -4,8 +4,8 @@ function AboutBio() {
   return (
     <div className='flex flex-col gap-4 px-4 text-justify'>
       <p>
-        Hi! I’m an aspiring web developer — or maybe more accurately, a
-        design-dev hybrid — based in <Bold>Portland, OR</Bold>.
+        Hi! I’m a fullstack design-dev hybrid based in <Bold>Portland, OR</Bold>
+        .
       </p>
       <p>
         Since March 2024, I’ve been deep in the world of JavaScript, React, and
