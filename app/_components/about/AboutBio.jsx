@@ -2,7 +2,7 @@ import { Bold } from '../text/TextStyles';
 
 function AboutBio() {
   return (
-    <>
+    <div className='flex flex-col gap-4 px-4 text-justify'>
       <p>
         Hi! I’m an aspiring web developer — or maybe more accurately, a
         design-dev hybrid — based in <Bold>Portland, OR</Bold>.
@@ -19,7 +19,7 @@ function AboutBio() {
         I bring that same creative eye and project-driven mindset into every
         line of code.
       </p>
-    </>
+    </div>
   );
 }
 

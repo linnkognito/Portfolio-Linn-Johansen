@@ -10,8 +10,6 @@ function ImageFrame({
 
   const styles = {
     base: 'w-full p-4 border border-pri/30 rounded-xs shadow-xl shadow-sdw/30',
-    avatar:
-      'w-[200px] h-[200px] p-4 border border-pri/30 rounded-xs overflow-hidden shadow-xl shadow-sdw/30',
   };
 
   return (

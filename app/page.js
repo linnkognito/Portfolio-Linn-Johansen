@@ -17,7 +17,7 @@ export default function Home() {
         <div className='flex w-full max-w-1/3 pl-6 pt-8 text-justify'>
           <ActionButtons
             theme='hero'
-            buttonCTA={{ label: 'Discover', href: '/portfolio' }}
+            buttonCTA={{ label: 'Portfolio', href: '/portfolio' }}
             aria-label='Hero section action buttons'
           />
         </div>

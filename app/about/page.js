@@ -1,11 +1,13 @@
 import PageWrapper from '@/_components/containers/PageWrapper';
-import AboutIntroSection from '@/_components/about/AboutIntroSection';
+import AboutSectionIntro from '../_components/about/AboutSectionIntro';
+import AboutSectionResume from '../_components/about/AboutSectionResume';
 
 function Page() {
   return (
     <PageWrapper aria-labelledby='about-heading'>
-      <article className='flex gap-20 w-full p-section py-12 text-justify bg-bgr/50 backdrop-blur-sm border border-pri/30 shadow-md shadow-sdw/50 rounded-xs'>
-        <AboutIntroSection />
+      <article className='flex flex-col gap-10 w-full px-6'>
+        <AboutSectionIntro />
+        {/* <AboutSectionResume /> */}
       </article>
     </PageWrapper>
   );
