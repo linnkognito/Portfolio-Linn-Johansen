@@ -20,6 +20,7 @@ function SectionHeading({
     xs: 'text-xs',
     sm: 'text-base',
     md: 'text-md',
+    mdDynamic: 'text-base sm:text-md md:text-lg',
     lg: 'text-lg',
     lgDynamic: 'text-base sm:text-xl md:text-2xl',
     xl: 'text-xl',

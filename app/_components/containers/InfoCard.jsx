@@ -15,7 +15,7 @@ function InfoCard({
       <SectionHeading
         tag='h3'
         color='pop'
-        size='lg'
+        size='mdDynamic'
         className='flex-center flex-1 max-h-[60px] text-center'
       >
         {title}

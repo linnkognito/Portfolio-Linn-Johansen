@@ -45,7 +45,7 @@ function ProjectAbout({ children, project }) {
           className='mt-2 mx-auto max-md:text-sm'
         >
           <ActionButtons
-            buttonCTA={{ label: 'Live', href: links.live }}
+            buttonCTA={links.live ? { label: 'Live', href: links.live } : false}
             buttonGithub={{ href: links.github }}
             className='mx-auto px-4'
             aria-label='Portfolio project action buttons'

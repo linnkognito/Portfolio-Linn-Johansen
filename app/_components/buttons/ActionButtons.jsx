@@ -17,16 +17,20 @@ function ActionButtons({
       role='group'
       {...props}
     >
-      <Link href={buttonCTA?.href || '/'} className='group'>
-        <ButtonCTA
-          ariaLabel={buttonCTA.ariaLabel || 'Go to live version'}
-          className='tshadow-txt group-hover:text-pop hover:tshadow-pop group-hover:shadow-[0_0_4px_#f8fafc]'
-        >
-          {buttonCTA?.label || 'More'}
-        </ButtonCTA>
-      </Link>
+      {buttonCTA && (
+        <>
+          <Link href={buttonCTA?.href || '/'} className='group'>
+            <ButtonCTA
+              ariaLabel={buttonCTA.ariaLabel || 'Go to live version'}
+              className='tshadow-txt group-hover:text-pop hover:tshadow-pop group-hover:shadow-[0_0_4px_#f8fafc]'
+            >
+              {buttonCTA?.label || 'More'}
+            </ButtonCTA>
+          </Link>
 
-      <Separator />
+          <Separator />
+        </>
+      )}
 
       {theme === 'base' && <ButtonGithub />}
       {theme === 'hero' && <ButtonConnect />}

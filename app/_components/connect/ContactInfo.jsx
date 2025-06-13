@@ -8,7 +8,7 @@ import {
   SocialLinkLinkedIn,
   SocialLocation,
   SocialName,
-} from '@/_components/Socials';
+} from '@/_components/ui/Socials';
 import DividerHorizontal from '@/_components/dividers/DividerHorizontal';
 import ContactForm from './ContactForm';
 import SectionHeading from '../text/SectionHeading';

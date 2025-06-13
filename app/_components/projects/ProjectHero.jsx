@@ -12,7 +12,7 @@ import {
 import ContainerPill from '@/_components/containers/ContainerPill';
 import TechIcon from '@/_components/technologies/TechIcon';
 import TechIcons from '@/_components/technologies/TechIcons';
-import ImageFrame from '../ImageFrame';
+import ImageFrame from '../ui/ImageFrame';
 
 function ProjectHero({ project = null }) {
   if (!project) return null;
@@ -34,7 +34,11 @@ function ProjectHero({ project = null }) {
   return (
     <>
       <div className='w-full px-4'>
-        <ImageFrame image={image} className='order-1 md:order-2' />
+        <ImageFrame
+          image={image}
+          aspect={image.aspect || 'aspect-[16/9]'}
+          className='order-1 md:order-2'
+        />
       </div>
 
       <ContainerPill className='order-2 md:order-1 max-md:mx-auto md:ml-0 md:mt-10'>

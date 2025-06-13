@@ -1,12 +1,12 @@
 'use client';
 
+import { motion } from 'framer-motion';
 import Image from 'next/image';
 import DividerHorizontal from '@/_components/dividers/DividerHorizontal';
 import ProjectCardDescription from '@_components/projects/ProjectCardDescription';
 import ActionButtons from '@/_components/buttons/ActionButtons';
 import ContainerPill from '@/_components/containers/ContainerPill';
 import ProjectLabel from './ProjectLabel';
-import { motion } from 'framer-motion';
 import ButtonCTA from '../buttons/ButtonCTA';
 import Link from 'next/link';
 
@@ -38,7 +38,7 @@ function ProjectCard({ project = null }) {
           src={mainImage.src}
           alt={mainImage.alt}
           fill
-          className='object-cover object-center rounded-xs'
+          className='object-cover object-top rounded-xs'
         />
       </div>
 

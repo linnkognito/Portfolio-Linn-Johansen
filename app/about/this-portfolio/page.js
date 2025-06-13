@@ -1,4 +1,4 @@
-import UnderConstrucitionMessage from '@/_components/UnderConstrucitionMessage';
+import UnderConstrucitionMessage from '@/_components/ui/UnderConstrucitionMessage';
 
 function Page() {
   return <UnderConstrucitionMessage />;

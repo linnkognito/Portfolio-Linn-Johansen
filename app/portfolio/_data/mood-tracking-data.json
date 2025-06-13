@@ -1,0 +1,48 @@
+{
+  "id": "mood-tracking",
+  "title": "Mood Tracking",
+  "shortDescription": "This is the frontend of the collaborative Mood Tracking project, a full-stack web app that lets users track their mood, feelings, and sleep habits. It presents the data in a clean, easy-to-understand dashboard.",
+  "path": "portfolio/collabs/mood-tracking",
+  "technologies": [
+    { "title": "Next.js", "icon": "nextjs" },
+    { "title": "Tailwind CSS", "icon": "tailwind" }
+  ],
+  "mainImage": {
+    "src": "/mood-tracking-1.png",
+    "alt": "Dashboard of project: Mood Tracking",
+    "aspect": "aspect-[45/32]"
+  },
+  "aboutImage": false,
+  "images": [
+    {
+      "src": "/mood-tracking-2.png",
+      "alt": "Dashboard of project: Mood Tracking"
+    },
+    {
+      "src": "/mood-tracking-3.png",
+      "alt": "Dashboards for responsive design of project: Mood Tracking"
+    },
+    {
+      "src": "/mood-tracking-4.png",
+      "alt": "Modal screen with form to add new mood entry of project: Mood Tracking"
+    },
+    {
+      "src": "/mood-tracking-ui-1.png",
+      "alt": "Component UI for Log Mood screen of project: Mood Tracking, from Figma Design"
+    },
+    {
+      "src": "/mood-tracking-ui-2.png",
+      "alt": "Color theme of project: Mood Tracking, from Figma Design"
+    },
+    {
+      "src": "/mood-tracking-ui-3.png",
+      "alt": "Icons and emojis of project: Mood Tracking, from Figma Design"
+    }
+  ],
+  "links": {
+    "live": false,
+    "github": "https://github.com/linnkognito/Mood-Tracking"
+  },
+  "isCourseWork": false,
+  "isUnderConstruction": true
+}

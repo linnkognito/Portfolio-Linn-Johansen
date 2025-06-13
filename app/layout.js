@@ -1,8 +1,8 @@
 import './globals.css';
 import { Orbitron, Jura } from 'next/font/google';
 
-import Header from '@_components/Header';
-import Footer from '@_components/Footer';
+import Header from '@/_components/ui/Header';
+import Footer from '@/_components/ui/Footer';
 import Image from 'next/image';
 
 const orbitron = Orbitron({
