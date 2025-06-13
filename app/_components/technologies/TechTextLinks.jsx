@@ -7,6 +7,13 @@ export function ExpressLink({ children }) {
     </TextLink>
   );
 }
+export function FigmaLink({ children }) {
+  return (
+    <TextLink href='https://www.figma.com/' aria-label='Figma website'>
+      {children || 'Figma'}
+    </TextLink>
+  );
+}
 export function MongoDBLink({ children }) {
   return (
     <TextLink href='https://www.mongodb.com/' aria-label='MongoDB website'>

@@ -1,19 +1,21 @@
-import project from '@/portfolio/_data/portfolio-template-data';
+import project from '@/portfolio/_data/a11y-data';
 
 import ProjectSection from '@/_components/projects/ProjectSection';
 import EmblaCarousel from '@/_components/carousel/EmblaCarousel';
 import PageHeading from '@/_components/text/PageHeading';
 import ProjectHero from '@/_components/projects/ProjectHero';
 import ProjectAbout from '@/_components/projects/ProjectAbout';
-import ProjectUiUx from '@/_components/projects/ProjectUiUx';
 import ProjectFeatureCards from '@/_components/projects/ProjectFeatureCards';
 import PageWrapper from '@/_components/containers/PageWrapper';
-import PortfolioTemplateAbout from '../../portfolio-template/_components/PortfolioTemplateAbout';
-import PortfolioTemplateUiDemo from '../../portfolio-template/_components/PortfolioTemplateUiDemo';
-import PortfolioTemplateUiUx from '../../portfolio-template/_components/PortfolioTemplateUiUx';
-import PortfolioTemplateFeatures from '../../portfolio-template/_components/PortfolioTemplateFeatures';
+import A11yAbout from './_components/A11yAbout';
+import A11yFeatures from './_components/A11yFeatures';
+import ActionButtons from '@/_components/buttons/ActionButtons';
+import ContainerPill from '@/_components/containers/ContainerPill';
+import ButtonCTA from '@/_components/buttons/ButtonCTA';
+import Link from 'next/link';
 
 function Page() {
+  console.log(project);
   return (
     <PageWrapper
       theme='dark'
@@ -29,9 +31,12 @@ function Page() {
         </ProjectSection>
 
         {/* About */}
-        <ProjectSection theme='framed' className='w-9/10 md:w-8/10'>
+        <ProjectSection
+          theme='framed'
+          className='flex flex-col w-9/10 md:w-8/10'
+        >
           <ProjectAbout project={project}>
-            <PortfolioTemplateAbout />
+            <A11yAbout />
           </ProjectAbout>
         </ProjectSection>
 
@@ -43,17 +48,10 @@ function Page() {
           />
         </ProjectSection>
 
-        {/* UI/UX */}
-        <ProjectSection theme='framed' className='w-9/10 md:w-8/10'>
-          <ProjectUiUx project={project} UiDemo={<PortfolioTemplateUiDemo />}>
-            <PortfolioTemplateUiUx />
-          </ProjectUiUx>
-        </ProjectSection>
-
         {/* Cards */}
         <ProjectSection theme='plain'>
           <ProjectFeatureCards>
-            <PortfolioTemplateFeatures />
+            <A11yFeatures />
           </ProjectFeatureCards>
         </ProjectSection>
       </article>

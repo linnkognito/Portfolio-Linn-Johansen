@@ -5,7 +5,7 @@ import ContainerPill from '@/_components/containers/ContainerPill';
 import ActionButtons from '@/_components/buttons/ActionButtons';
 import SectionHeading from '@/_components/text/SectionHeading';
 
-function ProjectAbout({ children, project }) {
+function ProjectAbout({ children, project, button = true }) {
   const { aboutImage: image, links } = project;
 
   const imageOrientations = {
@@ -39,18 +39,27 @@ function ProjectAbout({ children, project }) {
 
         <DividerHorizontal margin='m-0' width='w-full max-w-4/5' />
 
-        <ContainerPill
-          theme='borderPopDark'
-          width='min-w-fit max-w-[450px]'
-          className='mt-2 mx-auto max-md:text-sm'
-        >
-          <ActionButtons
-            buttonCTA={links.live ? { label: 'Live', href: links.live } : false}
-            buttonGithub={{ href: links.github }}
-            className='mx-auto px-4'
-            aria-label='Portfolio project action buttons'
-          />
-        </ContainerPill>
+        {button && (
+          <ContainerPill
+            theme='borderPopDark'
+            width='min-w-fit max-w-[450px]'
+            className='mt-2 mx-auto max-md:text-sm'
+          >
+            <ActionButtons
+              buttonCTA={
+                links.live
+                  ? {
+                      label: links.live.label || 'Live',
+                      href: links.live.href || links.live,
+                    }
+                  : false
+              }
+              buttonGithub={links.github ? { href: links.github } : false}
+              className='mx-auto px-4'
+              aria-label='Portfolio project action buttons'
+            />
+          </ContainerPill>
+        )}
       </div>
 
       {image && (

@@ -1,6 +1,6 @@
 {
   "id": "a11y",
-  "title": "A11y Design",
+  "title": "A11y Gig Design",
   "shortDescription": "A collection of designs I made for my accessibility gig on Fiverr. Created with Figma.",
   "path": "portfolio/design/a11y",
   "technologies": false,
@@ -20,7 +20,7 @@
       "alt": "Logo"
     },
     {
-      "src": "/a11y-semantic-html.png",
+      "src": "/a11y-semantic-aria.png",
       "alt": "Semantic HTML"
     },
     {
@@ -29,7 +29,10 @@
     }
   ],
   "links": {
-    "live": "https://www.fiverr.com/s/xXVE5gQ",
+    "live": {
+      "label": "Go to gig",
+      "href": "https://www.fiverr.com/s/xXVE5gQ"
+    },
     "github": false
   },
   "isCourseWork": false,

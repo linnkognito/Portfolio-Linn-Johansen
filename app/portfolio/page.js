@@ -3,6 +3,7 @@ import morningstar from '@/portfolio/_data/morningstar-data';
 import firstPortfolio from '@/portfolio/_data/first-portfolio-data';
 import natours from '@/portfolio/_data/natours-data';
 import moodTracking from '@/portfolio/_data/mood-tracking-data';
+import a11y from '@/portfolio/_data/a11y-data';
 // import theWildOasis from '@/portfolio/_data/the-wild-oasis-website-data';
 
 import PageHeading from '@/_components/text/PageHeading';
@@ -13,6 +14,7 @@ import DividerHorizontal from '@/_components/dividers/DividerHorizontal';
 function Page() {
   const projects = [
     moodTracking,
+    a11y,
     morningstar,
     portfolioTemplate,
     firstPortfolio,

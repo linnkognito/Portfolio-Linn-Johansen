@@ -18,21 +18,20 @@ function ActionButtons({
       {...props}
     >
       {buttonCTA && (
-        <>
-          <Link href={buttonCTA?.href || '/'} className='group'>
-            <ButtonCTA
-              ariaLabel={buttonCTA.ariaLabel || 'Go to live version'}
-              className='tshadow-txt group-hover:text-pop hover:tshadow-pop group-hover:shadow-[0_0_4px_#f8fafc]'
-            >
-              {buttonCTA?.label || 'More'}
-            </ButtonCTA>
-          </Link>
-
-          <Separator />
-        </>
+        <Link href={buttonCTA?.href || '/'} className='group'>
+          <ButtonCTA
+            ariaLabel={buttonCTA.ariaLabel || 'Go to live version'}
+            className='tshadow-txt group-hover:text-pop hover:tshadow-pop group-hover:shadow-[0_0_4px_#f8fafc]'
+          >
+            {buttonCTA?.label || 'More'}
+          </ButtonCTA>
+        </Link>
       )}
+      {buttonCTA && buttonGithub && <Separator />}
 
-      {theme === 'base' && <ButtonGithub buttonGithub={buttonGithub} />}
+      {buttonGithub && theme === 'base' && (
+        <ButtonGithub buttonGithub={buttonGithub} />
+      )}
       {theme === 'hero' && <ButtonConnect />}
     </div>
   );
