@@ -1,0 +1,37 @@
+{
+  "id": "a11y",
+  "title": "A11y Design",
+  "shortDescription": "A collection of designs I made for my accessibility gig on Fiverr. Created with Figma.",
+  "path": "portfolio/design/a11y",
+  "technologies": false,
+  "mainImage": {
+    "src": "/a11y-thumbnail.png",
+    "alt": "Thumbnail of my Accessibility Gig on Fiverr"
+  },
+  "aboutImage": false,
+  "images": [
+    {
+      "src": "/a11y-icons-showcase.png",
+      "alt": "Icons showcase"
+    },
+    { "src": "/a11y-color-theme.png", "alt": "Color theme" },
+    {
+      "src": "/a11y-logo.png",
+      "alt": "Logo"
+    },
+    {
+      "src": "/a11y-semantic-html.png",
+      "alt": "Semantic HTML"
+    },
+    {
+      "src": "/a11y-1-in-4.png",
+      "alt": "1 in 4 info card"
+    }
+  ],
+  "links": {
+    "live": "https://www.fiverr.com/s/xXVE5gQ",
+    "github": false
+  },
+  "isCourseWork": false,
+  "isUnderConstruction": false
+}

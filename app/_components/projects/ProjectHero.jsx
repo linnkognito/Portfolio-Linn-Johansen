@@ -29,6 +29,7 @@ function ProjectHero({ project = null }) {
     supabase: <Supabase />,
     tailwind: <Tailwind />,
     vite: <Vite />,
+    // figma: <Figma />,
   };
 
   return (
@@ -42,16 +43,18 @@ function ProjectHero({ project = null }) {
       </div>
 
       <ContainerPill className='order-2 md:order-1 max-md:mx-auto md:ml-0 md:mt-10'>
-        <TechIcons className='flex-row md:flex-col'>
-          {technologies?.map((tech) => (
-            <TechIcon
-              key={tech.title}
-              title={tech.title}
-              width='w-6 md:w-8'
-              icon={iconComponents[tech.icon]}
-            />
-          ))}
-        </TechIcons>
+        {technologies && (
+          <TechIcons className='flex-row md:flex-col'>
+            {technologies?.map((tech) => (
+              <TechIcon
+                key={tech.title}
+                title={tech.title}
+                width='w-6 md:w-8'
+                icon={iconComponents[tech.icon]}
+              />
+            ))}
+          </TechIcons>
+        )}
       </ContainerPill>
     </>
   );

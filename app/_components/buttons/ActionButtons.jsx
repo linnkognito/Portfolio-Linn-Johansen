@@ -32,7 +32,7 @@ function ActionButtons({
         </>
       )}
 
-      {theme === 'base' && <ButtonGithub />}
+      {theme === 'base' && <ButtonGithub buttonGithub={buttonGithub} />}
       {theme === 'hero' && <ButtonConnect />}
     </div>
   );

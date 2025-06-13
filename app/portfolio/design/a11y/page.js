@@ -8,10 +8,10 @@ import ProjectAbout from '@/_components/projects/ProjectAbout';
 import ProjectUiUx from '@/_components/projects/ProjectUiUx';
 import ProjectFeatureCards from '@/_components/projects/ProjectFeatureCards';
 import PageWrapper from '@/_components/containers/PageWrapper';
-import PortfolioTemplateAbout from './_components/PortfolioTemplateAbout';
-import PortfolioTemplateUiDemo from './_components/PortfolioTemplateUiDemo';
-import PortfolioTemplateUiUx from './_components/PortfolioTemplateUiUx';
-import PortfolioTemplateFeatures from './_components/PortfolioTemplateFeatures';
+import PortfolioTemplateAbout from '../../portfolio-template/_components/PortfolioTemplateAbout';
+import PortfolioTemplateUiDemo from '../../portfolio-template/_components/PortfolioTemplateUiDemo';
+import PortfolioTemplateUiUx from '../../portfolio-template/_components/PortfolioTemplateUiUx';
+import PortfolioTemplateFeatures from '../../portfolio-template/_components/PortfolioTemplateFeatures';
 
 function Page() {
   return (

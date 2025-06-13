@@ -23,6 +23,8 @@ function ProjectCard({ project = null }) {
     isUnderConstruction,
   } = project;
 
+  console.log(links);
+
   return (
     <motion.div
       layout={false}
