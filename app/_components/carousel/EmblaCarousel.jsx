@@ -101,7 +101,7 @@ const EmblaCarousel = (props) => {
           {slides.map((slide, index) => (
             <div className='embla__slide px-4 py-4' key={index}>
               <div className='embla__parallax shadow-md shadow-pri/10'>
-                <div className='embla__parallax__layer bg-bgr relative aspect-[16/9]'>
+                <div className='embla__parallax__layer bg-bgr relative aspect-[16/15]'>
                   <img
                     key={slide.src}
                     src={slide.src}
