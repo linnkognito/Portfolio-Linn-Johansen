@@ -9,10 +9,6 @@ import ProjectFeatureCards from '@/_components/projects/ProjectFeatureCards';
 import PageWrapper from '@/_components/containers/PageWrapper';
 import A11yAbout from './_components/A11yAbout';
 import A11yFeatures from './_components/A11yFeatures';
-import ActionButtons from '@/_components/buttons/ActionButtons';
-import ContainerPill from '@/_components/containers/ContainerPill';
-import ButtonCTA from '@/_components/buttons/ButtonCTA';
-import Link from 'next/link';
 
 function Page() {
   console.log(project);
