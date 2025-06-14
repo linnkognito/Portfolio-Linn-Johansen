@@ -1,5 +1,5 @@
-import Message from '@/_components/Message';
 import { WrenchScrewdriverIcon } from '@heroicons/react/24/outline';
+import Message from './Message';
 
 function UnderConstrucitionMessage() {
   return (
