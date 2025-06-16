@@ -1,4 +1,4 @@
-import Message from '../Message';
+import Message from '@/_components/containers/Message';
 
 function SuccessMessage() {
   return (

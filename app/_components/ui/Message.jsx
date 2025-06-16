@@ -3,8 +3,8 @@
 import { motion } from 'framer-motion';
 import PageWrapper from '@/_components/containers/PageWrapper';
 import DividerHorizontal from '@/_components/dividers/DividerHorizontal';
-import BackButton from './buttons/BackButton';
-import SectionHeading from './text/SectionHeading';
+import SectionHeading from '@/_components/text/SectionHeading';
+import BackButton from '@/_components/buttons/BackButton';
 
 function Message({ children, title, wrapper = true }) {
   return (

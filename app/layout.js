@@ -4,6 +4,7 @@ import { Orbitron, Jura } from 'next/font/google';
 import Header from '@/_components/ui/Header';
 import Footer from '@/_components/ui/Footer';
 import Image from 'next/image';
+import Message from './_components/ui/Message';
 
 const orbitron = Orbitron({
   subsets: ['latin'],
